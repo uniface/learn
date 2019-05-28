@@ -1,0 +1,21 @@
+[SETTINGS]
+; David Akerman's common\adm\urouter.asn
+; Note: modified default_net due to running in VM, and project hosted in VMWare shared folder on base laptop
+; urouter.asn included from project, but also note non-standard installation folder specified in included file
+
+$putmess_logfile = D:\Development\Uniface\10.3\log\urouter%p.log
+$priv_mon_user = urouter
+;$default_net = TCP:+13001|||
+$default_net = TCP:localhost+13001|||
+
+[SERVERS]
+; =========================================================================
+; Uniface servers
+; =========================================================================
+default = "C:\Program Files (x86)\Uniface\10.3\common\bin\userver.exe" /adm="C:\Program Files (x86)\Uniface\10.3\uniface\adm" /maxidle=3m
+; For Uniface WebApplication Server
+wasv = "C:\Program Files (x86)\Uniface\10.3\common\bin\userver.exe" /dir="D:\Development\Uniface\10.3\project" /adm="C:\Program Files (x86)\Uniface\10.3\uniface\adm" /asn=wasv.asn
+; For debug purposes
+debug = "C:\Program Files (x86)\Uniface\10.3\common\bin\userver.exe" /max=1 /dir="D:\Development\Uniface\10.3\project" /adm="C:\Program Files (x86)\Uniface\10.3\uniface\adm" /deb=localhost+13002:wait /asn=wasv.asn
+
+;#file \\VMWare-host\Shared Folders\Development\Uniface\10\learn\asn\urouter.asn

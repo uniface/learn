@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- 
+ Context configuration file for PR Uniface 10 learning environment
+ -->
+<Context docBase="\\vmware-host\Shared Folders\Development\Uniface\10\learn\web">
+  <Valve className="org.apache.catalina.valves.AccessLogValve" prefix="uniface-" suffix=".log" pattern="common"/>
+</Context>

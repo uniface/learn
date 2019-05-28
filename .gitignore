@@ -1,0 +1,21 @@
+IDE - webapp.lnk
+ide_state.zip
+project.setup.xml
+Server Debug.lnk
+UDBG.CNF
+asn/ide.asn
+asn/ide.ini
+asn/urouter.asn
+asn/setup.asn
+project/cmi/
+project/dbms/*.db
+project/dtd/
+project/export/
+project/lst/
+log/
+project/stat_UURTEX49.zip
+resources/
+web/dspjs/
+web/WEB-INF/web.xml
+*/archive/
+*/backup/

@@ -1,0 +1,40 @@
+#file .\asn\dbms.asn
+
+[SETTINGS]
+$putmess_logfile      = .\log\wasv_%p.log
+$search_resources     = resources_only
+$test_mode_components
+$language = USA
+$variation = ACMELIB
+
+[RESOURCES]
+..\resources
+usys:usys.uar
+
+[FILES]
+*.log	..\log\*.log
+*.hts	..\hts\*.hts
+
+[WEB]
+; The following assignment setting is used to calculate the hash-values to protect non-editable fields.
+$server_secret = hCRivhboXoFHjdfZevndGlbpnXScWKame2dFfBnkIJesFAA7tCUntLCrtILMqgZc
+
+; The following assignment setting is used to specify the location of DSP JavaScript
+;$js_base_url = ../dspjs
+
+; The following assignment setting is used to specify the location of base URL for JavaScript and CSS resources for DSPs
+;$uniface_runtime_base_url = ../common
+$uniface_runtime_base_url = /uniface/common
+
+[LOGICALS]
+; Specify your filters using a comma separated list in order of processing
+;; UWEBOUTPUTFILTERS = mywebfilter
+;USYSHTTPTITLE   Application Error
+;USYSHTTPHEADER  <pre>An error prevented the execution of your request</pre>
+;USYSHTTPBODY    Please contact your System Administrator
+;USYSHTTPBGCOLOR wheat
+;;USYSHTTPBACKGROUND ../img/error.jpg
+;USYSHTTPFRAME   false
+
+; Write diagnostics to logfile
+TRACE = 1
