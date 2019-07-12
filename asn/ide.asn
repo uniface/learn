@@ -1,17 +1,17 @@
 #file USYSADM:ide.asn
 
-#file ..\asn\dbms.asn
+#file .\asn\dbms.asn
 
 [SETTINGS]
 $putmess_logfile        ..\log\ide%p.log
-$resources_output       ..\resources\
+$resources_output       .\resources\
 $listing_level			2
 $variation				ACMELIB
 
 [RESOURCES]
 ;additional.uar
 D:\Development\Uniface\10.3\Tools\VC\VersionControl.uar
-..\resources\
+.\resources\
 
 [FILES]
 *.cmi   .\cmi\*.cmi
