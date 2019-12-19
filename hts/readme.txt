@@ -1,0 +1,1 @@
+Folder for HTML skeletons. If you do not define a layout for web components (DSP or USP), Uniface will look here for a component.hts file (where component is the component label), as directed by the .asn file.
