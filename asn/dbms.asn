@@ -1,6 +1,6 @@
 [DRIVER_SETTINGS]
 SLE     U1.0
-USYS$SLE_PARAMS create db = on
+USYS$SLE_PARAMS create db=on, identifiers=quoted
 
 [PATHS]
 ; Path to the SQLite database for the Uniface Repository:

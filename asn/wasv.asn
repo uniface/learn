@@ -8,7 +8,7 @@ $language = USA
 $variation = ACMELIB
 
 [RESOURCES]
-..\resources
+.\resources
 usys:usys.uar
 
 [FILES]
