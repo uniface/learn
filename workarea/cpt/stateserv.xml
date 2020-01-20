@@ -3,8 +3,8 @@
 <!DOCTYPE UNIFACE PUBLIC "UNIFACE.DTD" "UNIFACE.DTD">
 <UNIFACE release="10.3" repversion="6" xmlengine="2.0">
 <TABLE>
-<DSC name="UFORM" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UFORM" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UTIMESTAMP" seqno="1" type="E" level="2" pack="0" scale="0" length="15"
  pointer="0" inum="0" ufocc="0" />
 <FLD name="ULABEL" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -58,7 +58,7 @@
 <FLD name="HIDESTACK" seqno="26" type="S" level="2" pack="1" scale="0" length="1"
  pointer="0" inum="0" ufocc="0" />
 <FLD name="TEMPLATENAME" seqno="27" type="S" level="2" pack="0" scale="0" length="60"
- pointer="0" inum="0" ufocc="0" />
+ pointer="0" inum="1" ufocc="0" idxnum="4" idxsnr="1" />
 <FLD name="UINHERIT" seqno="28" type="B" level="2" pack="0" scale="0" length="1"
  pointer="0" inum="0" ufocc="0" />
 <FLD name="LIBRAR" seqno="29" type="S" level="2" pack="0" scale="0" length="60"
@@ -141,7 +141,7 @@
  pointer="0" inum="0" ufocc="0" varinfo=",1,0,2,\1F\E1,0,0,0,,0,0,0,," />
 </DSC>
 <OCC>
-<DAT name="UTIMESTAMP">2012-01-12T09:38:21.00</DAT>
+<DAT name="UTIMESTAMP">2020-01-07T15:45:20.00</DAT>
 <DAT name="ULABEL">STATESERV</DAT>
 <DAT name="FTYP">K</DAT>
 <DAT name="DATA_ACCESS">N</DAT>
@@ -157,31 +157,12 @@
 <DAT name="UINHERIT">F</DAT>
 <DAT name="UTRANSACT">1</DAT>
 <DAT name="UCOMMENT" xml:space='preserve'>UKTRG WN9 V1.1 7 Mar 08</DAT>
-<DAT name="UDECLARATIONS" xml:space='preserve'>#Comment ----------------------------------------------
-#Comment start_of_references
-#ifdefined TEMPLATENAME
-#info symbol TEMPLATENAME is already or also defined as a global or local constant
-#endif
-#define TEMPLATENAME=
-#Comment 
+<DAT name="UDECLARATIONS" xml:space='preserve'>; Your component defines here (optional)...
 
-#Comment end_of_references
-
-
-#Comment ----------------------------------------------
-#Comment start_of_mappings
-#Comment end_of_mappings
-
-
-#Comment ----------------------------------------------
-#Comment start_of_symbols
-#Comment end_of_symbols
-
-
-#Comment ----------------------------------------------
+; Your component VARIABLES block here (optional)...
 </DAT>
-<DAT name="USCRIPT" xml:space='preserve'>operation getstates
-;building state list for dynamic menu exercise
+<DAT name="USCRIPT" xml:space='preserve'>;build state list for dynamic menu exercise
+operation getstates
 	params
 		string p_id : IN
 		string p_items : OUT
@@ -190,7 +171,7 @@
 		string v_sub
 	endvariables
 	clear
-	countryid.state=p_id   ;profile
+	countryid.state/init=p_id   ;profile
 	retrieve  ;get states for the country profiled
 	if ($status &lt; 0)
 		putitem/id v_sub "TYPE","OPTION"
@@ -208,25 +189,30 @@
 	endif
 end ;operation getstatesformenu
 
-operation getcountries
+
 ;get countries for inner entity retrieve
+operation getcountries
 params
   string p_profile : in
   string p_listofcountries : out
 endparams
-clear
-statename.state=p_profile
-retrieve
-putlistitems p_listofcountries, countryid.state
-end; getcountries
+
+  clear
+  statename.state/init=p_profile
+  retrieve
+  if ($status &gt;= 0)
+    putlistitems p_listofcountries, countryid.state
+  endif
+
+end; operation getcountries
 </DAT>
 <DAT name="FORMPIC" xml:space='preserve'>
  &uFRM;TYP=E&uSEP;NAM=STATE.ACMECUST&uSEP;WID=2&uSEP;HEI=1&uSEP;HOC=2&uSEP;VOC=1&uFRM;</DAT>
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UXGROUP" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UXGROUP" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="ULABEL" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
 <FLD name="UBASE" seqno="2" type="S" level="2" pack="0" scale="0" length="60"

@@ -3,8 +3,8 @@
 <!DOCTYPE UNIFACE PUBLIC "UNIFACE.DTD" "UNIFACE.DTD">
 <UNIFACE release="10.3" repversion="6" xmlengine="2.0">
 <TABLE>
-<DSC name="UFORM" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UFORM" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UTIMESTAMP" seqno="1" type="E" level="2" pack="0" scale="0" length="15"
  pointer="0" inum="0" ufocc="0" />
 <FLD name="ULABEL" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -58,7 +58,7 @@
 <FLD name="HIDESTACK" seqno="26" type="S" level="2" pack="1" scale="0" length="1"
  pointer="0" inum="0" ufocc="0" />
 <FLD name="TEMPLATENAME" seqno="27" type="S" level="2" pack="0" scale="0" length="60"
- pointer="0" inum="0" ufocc="0" />
+ pointer="0" inum="1" ufocc="0" idxnum="4" idxsnr="1" />
 <FLD name="UINHERIT" seqno="28" type="B" level="2" pack="0" scale="0" length="1"
  pointer="0" inum="0" ufocc="0" />
 <FLD name="LIBRAR" seqno="29" type="S" level="2" pack="0" scale="0" length="60"
@@ -141,6 +141,7 @@
  pointer="0" inum="0" ufocc="0" varinfo=",1,0,2,\1F\E1,0,0,0,,0,0,0,," />
 </DSC>
 <OCC>
+<DAT name="UTIMESTAMP">2020-01-07T15:38:22.00</DAT>
 <DAT name="ULABEL">EXAMPLE</DAT>
 <DAT name="FTYP">K</DAT>
 <DAT name="DATA_ACCESS">N</DAT>
@@ -156,169 +157,183 @@
 <DAT name="HIDESTACK">N</DAT>
 <DAT name="UINHERIT">F</DAT>
 <DAT name="UTRANSACT">0</DAT>
-<DAT name="UDECLARATIONS" xml:space='preserve'>#Comment ----------------------------------------------
-#Comment start_of_references
-#ifdefined TEMPLATENAME
-#info symbol TEMPLATENAME is already or also defined as a global or local constant
-#endif
-#define TEMPLATENAME=
-#Comment 
+<DAT name="UDECLARATIONS" xml:space='preserve'>; Your component defines here (optional)...
 
-#Comment end_of_references
-
-
-#Comment ----------------------------------------------
-#Comment start_of_mappings
-#Comment end_of_mappings
-
-
-#Comment ----------------------------------------------
-#Comment start_of_symbols
-#Comment end_of_symbols
-
-
-#Comment ----------------------------------------------
+; Your component VARIABLES block here (optional)...
 </DAT>
 <DAT name="USCRIPT" xml:space='preserve'>operation exec
-$formtitle="An example form"
-clear
-retrieve
-if ($status&lt;0)
-  message/error "An error has occurred; no data found: Exiting form"
-  return (-1)
-endif
-edit
 
+  ; Your pre-edit code here...
+  $formtitle="An example form"
+  clear
+  retrieve
+  if ($status&lt;0)
+    message/error "An error has occurred; no data found: Exiting form"
+    return (-1)
+  endif
+  ; Shows the form component and allow data entry
+  edit
+
+  ; Your post-edit code here...
+
+  ; Return execution status:
+  ;   return 0    ; return &gt;= 0 typically indicates a succesful execution
+  ;   return -1   ; return &lt; 0 typically indicates an error during execution
+  return 0
+
+end ; operation exec
 
 
 trigger accept
-#ifdefined frmEntity
-  ; Generated three tier component: Delegate save() to FRM Subtype.
-  ; This allows a uniform implementation that can be invoked
-  ; by other objects too (for example, by an 'OK' Button).
-if ($formmod)
-  $collhandle("&lt;frmEntity&gt;")-&gt;save()       ; save modifications
-  if ($status &lt; 0)                         ; check negative status from Save()
-    return (-1)
-  endif
-endif
+; This trigger is fired by a macro ^ACCEPT (GOLD-A) and typically closes the component.
+; It is only fired if the current active path is successfuly validated.
 
-exit (0)
-#else
-#endif
+; Your VARIABLES block here (optional)...
 
+  ; Your implementation here...
+
+  ; Return execution status:
+  ;   return 0     ; return &gt;= 0 continues accept and unloads the the component instance
+  ;   return -1    ; return &lt; 0 cancels accept and does not unload the component instance
+  return 0
+
+end ; operation accept
 
 
-trigger erase
-#ifdefined frmEntity
-  ; Generated three tier component: Delegate deleteall() to FRM Subtype.
-  ; This allows a uniform implementation that can be invoked
-  ; by other objects too (for example, by a 'Delete All' Button).
-  $collhandle("&lt;frmEntity&gt;")-&gt;deleteall()
+trigger quit
+; This trigger is fired by a macro ^QUIT (GOLD-Q) and typically closes the component
 
-#else
-  erase
-  if ($status &lt; 0)
-    message $text(1763)   ;error
-    rollback
-  else
-    if ($status = 1)
-      message $text(1634) ;not allowed
-    else
-      message $text(1806) ;Ok
-      commit
-    endif
-  endif
+  ; Your implementation here...  
 
-#endif
+  ; Return execution status:
+  ;   return 0    ; return &gt;= 0 to allow the component to close
+  ;   return -1   ; return &lt; 0 to prevent the component from closing
+  return 0
 
-
-
-trigger store
-#ifdefined frmEntity
-  ; Generated three tier component: Delegate save() to FRM Subtype.
-  ; This allows a uniform implementation that can be invoked
-  ; by other objects too (for example, by a 'Save' Button).
-  $collhandle("&lt;frmEntity&gt;")-&gt;save()
-
-#else
-  store
-  if ($status &lt; 0)
-     message $text(1500)    ; error
-     rollback
-  else
-    if ($status = 1)
-      message $text(1723)   ; no change
-    else
-      commit
-      if ($status &lt; 0)
-        rollback
-      else
-        message $text(1805) ; Ok
-      endif
-    endif
-  endif
-
-#endif
-
-
-
-trigger retrieveSequential
-#ifdefined frmEntity
-  ; Generated three tier component: Delegate load() to FRM Subtype.
-  ; This allows a uniform implementation that can be invoked
-  ; by other objects too (for example, by a 'Load' Button).
-  $collhandle("&lt;frmEntity&gt;")-&gt;load()
-
-#else
-  retrieve
-  if ($status &lt; 0)
-    message $text(1762) ;error
-  endif
-
-#endif
-
-
-
-trigger retrieve
-#ifdefined frmEntity
-  ; Generated three tier component: Delegate load() to FRM Subtype.
-  ; This allows a uniform implementation that can be invoked
-  ; by other objects too (for example, by a 'Load' Button).
-  $collhandle("&lt;frmEntity&gt;")-&gt;load()
-
-#else
-  retrieve
-  if ($status &lt; 0)
-    message $text(1762) ;error
-  endif
-
-#endif
-
+end ; trigger quit
 
 
 trigger clear
-#ifdefined frmEntity
-  ; Generated three tier component: Delegate clear() to FRM Subtype.
-  ; This allows a uniform implementation that can be invoked
-  ; by other objects too (for example, by a 'Clear' Button).
-  $collhandle("&lt;frmEntity&gt;")-&gt;clear()
+; This trigger is fired by a macro ^CLEAR (GOLD-G) and typically cleares the data from the component without storing
 
-#else
+  ; Your implementation here, e.g.:
   clear
 
-#endif
+  return 0
 
-end
+end ; trigger clear
 
 
+trigger retrieve
+; This trigger is fired on macro ^RETRIEVE (GOLD-R) and typically performs a data retrieve
 
-#startdefine
+  ; Your implementation here, e.g.:
+  retrieve
+  selectcase $procerror
+  case 0
+    ; ok
+  case -2, -4
+    message/info "Retrieve: No data found in the database."
+  elsecase
+    message/error "Retrieve: Error occurred - (%%($procerror))."
+  endselectcase
 
-#define $triggerAbbr=OPER
-#include U:zProcError  ; Report an unexpected failure in a proc statement.
+  return 0
 
-#enddefine</DAT>
+end ; trigger retrieve
+
+
+trigger store
+; This trigger is fired on macro ^STORE(GOLD-S) and typically performs a data store
+; It is only fired if the current active path is successfuly validated.
+
+variables
+  numeric vProcError
+  ; More variables here ...
+endvariables
+
+  ; Your implementation here, e.g.:
+  store
+  selectcase $status
+  case 1
+    ; no modifications
+    message/warning "No modifications."
+  case 0
+    ; store successful
+    commit
+    selectcase $procerror
+    case 0
+      ; store and commit successful
+      message/info "Store successful."
+    elsecase
+      ; commit error
+      message/info "Commit failed ($procerror=%%($procerror))."
+    endselectcase
+  elsecase
+    ; store failed
+    vProcError = $procerror
+    ; rollback
+    rollback
+    selectcase $procerror
+    case 0
+      ; rollback successful
+      message/error "Store failed ($procerror=%%(vProcError)) - transaction rolled back."
+    elsecase
+      ; rollback error
+      message/error "Store failed ($procerror=%%(vProcError)) - Rollback failed ($procerror=%%($procerror))."
+    endselectcase
+  endselectcase
+
+  return 0
+
+end ; trigger store
+
+
+trigger erase
+; This trigger is fired on macro ^ERASE (GOLD-E) and typically erases retrieved data
+
+variables
+  numeric vProcError
+  ; More variables here ...
+endvariables
+
+  ; Your implementation here, e.g.:
+  erase
+  ; Erase (delete and store) retrieved data of specified entity
+  ;   (make sure delete trigger is defined for entity)
+  erase
+  selectcase $procerror
+  case 0
+    ; erase successful or no modifications
+    commit
+    selectcase $procerror
+    case 0
+      ; erase and commit successful
+      message/info "Erase successful."
+    elsecase
+      ; commit error
+      message/info "Commit failed ($procerror=%%($procerror))."
+    endselectcase
+  elsecase
+    ; erase failed
+    vProcError = $procerror
+
+    ; rollback
+    rollback
+    selectcase $procerror
+    case 0
+      ; rollback successful
+      message/error "Erase failed ($procerror=%%(vProcError)) - transaction rolled back."
+    elsecase
+      ; rollback error
+      message/error "Erase failed ($procerror=%%(vProcError)) - Rollback failed ($procerror=%%($procerror))."
+    endselectcase
+  endselectcase
+
+  return 0
+
+end ; trigger erase
+</DAT>
 <DAT name="FORMPIC" xml:space='preserve'>
   &uFRM;TYP=E&uSEP;NAM=COUNTRY.ACMECUST&uSEP;WID=77&uSEP;HEI=19&uSEP;HOC=77&uSEP;VOC=19&uFRM;&uFRM;TYP=L&uSEP;NAM=IDCOUNTRY.COUNTRY&uSEP;WID=19&uSEP;HEI=1&uFRM; &uFRM;TYP=F&uSEP;NAM=IDCOUNTRY&uSEP;WID=3&uSEP;HEI=1&uFRM;
   &uFRM;TYP=L&uSEP;NAM=NM.COUNTRY&uSEP;WID=12&uSEP;HEI=1&uFRM;        &uFRM;TYP=F&uSEP;NAM=NM&uSEP;WID=50&uSEP;HEI=1&uFRM;
@@ -335,8 +350,8 @@ end
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UXGROUP" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UXGROUP" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="ULABEL" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
 <FLD name="UBASE" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -484,8 +499,8 @@ end
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UXFIELD" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UXFIELD" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="ULABEL" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
 <FLD name="GRP" seqno="2" type="S" level="2" pack="0" scale="0" length="60"

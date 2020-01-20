@@ -3,8 +3,8 @@
 <!DOCTYPE UNIFACE PUBLIC "UNIFACE.DTD" "UNIFACE.DTD">
 <UNIFACE release="10.3" repversion="6" xmlengine="2.0">
 <TABLE>
-<DSC name="UFORM" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UFORM" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UTIMESTAMP" seqno="1" type="E" level="2" pack="0" scale="0" length="15"
  pointer="0" inum="0" ufocc="0" />
 <FLD name="ULABEL" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -58,7 +58,7 @@
 <FLD name="HIDESTACK" seqno="26" type="S" level="2" pack="1" scale="0" length="1"
  pointer="0" inum="0" ufocc="0" />
 <FLD name="TEMPLATENAME" seqno="27" type="S" level="2" pack="0" scale="0" length="60"
- pointer="0" inum="0" ufocc="0" />
+ pointer="0" inum="1" ufocc="0" idxnum="4" idxsnr="1" />
 <FLD name="UINHERIT" seqno="28" type="B" level="2" pack="0" scale="0" length="1"
  pointer="0" inum="0" ufocc="0" />
 <FLD name="LIBRAR" seqno="29" type="S" level="2" pack="0" scale="0" length="60"
@@ -141,7 +141,7 @@
  pointer="0" inum="0" ufocc="0" varinfo=",1,0,2,\1F\E1,0,0,0,,0,0,0,," />
 </DSC>
 <OCC>
-<DAT name="UTIMESTAMP">2011-06-22T14:55:01.00</DAT>
+<DAT name="UTIMESTAMP">2020-01-07T15:41:39.00</DAT>
 <DAT name="ULABEL">EXSTATEFROMMENU</DAT>
 <DAT name="FTYP">K</DAT>
 <DAT name="DATA_ACCESS">N</DAT>
@@ -160,42 +160,16 @@
 <DAT name="LIBRAR">ACMELIB</DAT>
 <DAT name="UTRANSACT">0</DAT>
 <DAT name="UCOMMENT" xml:space='preserve'>UKTRG WN9 v1.1 7 Mar 08</DAT>
-<DAT name="UDECLARATIONS" xml:space='preserve'>#Comment ----------------------------------------------
-#Comment start_of_references
-#ifdefined TEMPLATENAME
-#info symbol TEMPLATENAME is already or also defined as a global or local constant
-#endif
-#define TEMPLATENAME=
-#Comment 
+<DAT name="UDECLARATIONS" xml:space='preserve'>; Your component defines here (optional)...
 
-#Comment end_of_references
-
-
-#Comment ----------------------------------------------
-#Comment start_of_mappings
-#Comment end_of_mappings
-
-
-#Comment ----------------------------------------------
-#Comment start_of_symbols
-#Comment end_of_symbols
-
-
-#Comment ----------------------------------------------
+; Your component VARIABLES block here (optional)...
 </DAT>
 <DAT name="USCRIPT" xml:space='preserve'>trigger erase
 ;erase disabled
-
+end ; trigger erase
 
 
 trigger store
-#ifdefined frmEntity
-  ; Generated three tier component: Delegate save() to FRM Subtype.
-  ; This allows a uniform implementation that can be invoked
-  ; by other objects too (for example, by a 'Save' Button).
-  $collhandle("&lt;frmEntity&gt;")-&gt;save()
-
-#else
   store
   if ($status &lt; 0)
      message $text(1500)    ; error
@@ -212,9 +186,7 @@ trigger store
       endif
     endif
   endif
-
-#endif
-
+end ; trigger store
 
 
 trigger retrieveSequential
@@ -222,7 +194,7 @@ trigger retrieveSequential
   if ($status &lt; 0)
     message $text(1762) ;error
   endif
-
+end ; trigger retrieveSequential
 
 
 trigger retrieve
@@ -230,42 +202,37 @@ trigger retrieve
   if ($status &lt; 0)
     message $text(1762) ;error
   endif
-
+end ; trigger retrieve
 
 
 trigger clear
-if ($formdbmod)
-  askmess "Form has been changed.  Clear ?~What's New Uniface 9"
-  if ($status=0)
-    return (-1)
+  if ($instancedbmod)
+    askmess "Form has been changed.  Clear ?~Uniface 10 eLearning"
+    if ($status=0)
+      return (-1)
+    endif
   endif
-endif
-clear
-
+  clear
+end ; trigger clear
 
 
 trigger menu
-debug
-
-end
-
+  debug
+end ; trigger menu
 
 
-#startdefine
-
-#define $triggerAbbr=OPER
-#include U:zProcError  ; Report an unexpected failure in a proc statement.
 operation GETSTATE
 params
   string p_sid : in
 endparams
-clear
-IDSTATE.STATE=p_sid
-retrieve
-edit/nonmodal
-end
 
-#enddefine</DAT>
+  clear
+  IDSTATE.STATE/init=p_sid
+  retrieve
+  edit/nonmodal
+
+end ; operation GETSTATE
+</DAT>
 <DAT name="FORMPIC" xml:space='preserve'>
 
    &uFRM;TYP=E&uSEP;NAM=STATE.ACMECUST&uSEP;WID=71&uSEP;HEI=7&uSEP;HOC=71&uSEP;VOC=7&uFRM;&uFRM;TYP=L&uSEP;NAM=STATECODE.STATE&uSEP;WID=10&uSEP;HEI=1&uFRM;&uFRM;TYP=F&uSEP;NAM=STATECODE&uSEP;WID=11&uSEP;HEI=1&uFRM;
@@ -275,8 +242,8 @@ end
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UXGROUP" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UXGROUP" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="ULABEL" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
 <FLD name="UBASE" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -408,8 +375,8 @@ end
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UXFIELD" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UXFIELD" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="ULABEL" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
 <FLD name="GRP" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
