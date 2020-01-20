@@ -1,4 +1,5 @@
 [DRIVER_SETTINGS]
+SEQ		U1.0
 SLE     U1.0
 USYS$SLE_PARAMS create db=on, identifiers=quoted
 
@@ -12,3 +13,6 @@ $SYS    $DBMS
 $UUU    $DBMS
 $IDF    $DBMS
 $DEF    $DBMS_DEF
+
+[ENTITIES]
+COUNTRYFLAG.ACMECUST=$seq:.\dbms\countryflag.*
