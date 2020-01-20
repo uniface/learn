@@ -1,3 +1,9 @@
 [SERVERS]
-learn    = "C:\Program Files (x86)\Uniface\10.3\common\bin\userver.exe" /dir="D:\Development\Uniface\10\learn\" /adm="C:\Program Files (x86)\Uniface\10.3\uniface\adm\" /asn=.\asn\wasv.asn
-learn_debug = "C:\Program Files (x86)\Uniface\10.3\common\bin\userver.exe" /dir="D:\Development\Uniface\10\learn\" /adm="C:\Program Files (x86)\Uniface\10.3\uniface\adm\" /asn=.\asn\wasv.asn /max=1 /deb=localhost+13002:wait
+;Uniface URouter assignments for e-learning environment
+;TODO:
+;a) Change the Uniface installation location to match yours, e.g. C:\Program Files (x86)\Uniface\Uniface 10.3.02 and change /adm switch to match
+;b) Change the working folder in the /dir switch
+;c) include in Uniface\common\adm\urouter.asn using #file
+;d) Restart urouter service
+u10learn    = "C:\Program Files (x86)\Uniface10\common\bin\userver.exe" /dir="D:\Development\Uniface\10\u10learn\" /adm="C:\Program Files (x86)\Uniface10\uniface\adm\" /asn=.\asn\wasv.asn
+u10learn_debug = "C:\Program Files (x86)\Uniface10\common\bin\userver.exe" /dir="D:\Development\Uniface\10\u10learn\" /adm="C:\Program Files (x86)\Uniface10\uniface\adm\" /asn=.\asn\wasv.asn /max=1 /deb=localhost+13002:wait

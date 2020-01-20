@@ -1,35 +1,42 @@
+[RESOURCES]
+;additional.uar
+uar\VC\VersionControl.uar
+.\resources\
+
 #file USYSADM:ide.asn
 
-#file ..\asn\dbms.asn
+#file .\asn\dbms.asn
 
 [SETTINGS]
-$putmess_logfile        ..\log\ide%p.log
-$resources_output       ..\resources\
 $listing_level			2
+;$symbol_table			3
+$putmess_logfile        ..\log\ide%p.log
+$resources_output       .\resources\
 $variation				ACMELIB
 
-[RESOURCES]
-;.\uar\additions.uar
-;.\uar\additional.uar
-..\resources\
 
 [FILES]
 *.cmi   .\cmi\*.cmi
 *.dtd   .\dtd\*.dtd
 *.*lst	.\lst\*.*lst
+*.*sym  .\sym\*.*sym
+
+[SERVICES_EXEC]
+S_MATH		$ASV:S_MATH
 
 [LOGICALS]
 ; Command spawned to test WEB components (USP and DSP). Default value if this logical is not explicitly defined:
 ;TEST_COMMAND_CPT_WEB = cmd /c start http://localhost:%TomcatPort/uniface/wrd/%CptName
-TEST_COMMAND_CPT_WEB = cmd /c start http://localhost:8080/prfr/wrd/%CptName
+TEST_COMMAND_CPT_WEB = cmd /c start http://localhost:8080/u10learn/wrd/%CptName
 ; Command spawned to test (non-WEB) components. Default value if this logical is not explicitly defined:
 ;TEST_COMMAND_CPT = %ExeFile /adm=%AdmDir /dir=%WorkDir /asn=%AsnFile /ini=%IniFile /tst %CptName
 
-IDETITLE=Uniface Learning
+IDETITLE=Uniface eLearning
 
 ; Custom worksheets
 ;IDE_DEFINE_WORKSHEETS_CPT=HTML_PREVIEW
 ;IDE_DEFINE_WORKSHEETS_PRJ=MAINT_PROJECT
+IDE_DEFINE_USERMENUS = VC_UPDATED
 
 ; By default, the templates and palettes used in the Resource Browsers cannot 
 ; be opened in an editor. If the user wants to create and maintain user defined 
@@ -44,3 +51,6 @@ allow_browse_templates = 0
 ;; Override default palettes for Component Editor:
 ;;ComponentEditor_DefineStructure_ResourceBrowser_DefaultPalette_DSP  = cpt:UPALETTE_DSP
 ;ComponentEditor_DefineStructure_ResourceBrowser_DefaultPalette_DSP  = cpt:APALETTE_DSP
+
+;debug control
+ENABLE_DEBUG = 1

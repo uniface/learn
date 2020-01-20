@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Tomcat Context configuration file for Uniface 10 eLearning
+ - modify location to match your installation and place in tomcat conf folder, 
+   e.g. Uniface10\common\tomcat\conf\Catalina\localhost 
+   then restart Tomcat service
+ -->
+<Context docBase="D:\Development\Uniface\10\Uniface 103 Learning\web">
+<Valve className="org.apache.catalina.valves.AccessLogValve" prefix="uniface" suffix=".log" pattern="common"/>
+</Context>
