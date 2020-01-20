@@ -2,8 +2,6 @@ IDE - webapp.lnk
 ide_state.zip
 Server Debug.lnk
 UDBG.CNF
-asn/ide.asn
-asn/ide.ini
 asn/urouter.asn
 asn/setup.asn
 cmi/
@@ -20,4 +18,3 @@ web/WEB-INF/web.xml
 */backup/
 *.zip
 project.setup.xml
-WasListener.*

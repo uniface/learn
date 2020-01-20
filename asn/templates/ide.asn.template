@@ -9,7 +9,8 @@ $listing_level			2
 $variation				ACMELIB
 
 [RESOURCES]
-;additional.uar
+;.\uar\additions.uar
+;.\uar\additional.uar
 ..\resources\
 
 [FILES]
