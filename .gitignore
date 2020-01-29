@@ -7,7 +7,6 @@ asn/setup.asn
 cmi/
 dbms/*.db
 dtd/
-export/
 lst/
 log/
 sym/
