@@ -1,6 +1,5 @@
 [RESOURCES]
 ;additional.uar
-uar\VC\VersionControl.uar
 .\resources\
 
 #file USYSADM:ide.asn
@@ -10,7 +9,7 @@ uar\VC\VersionControl.uar
 [SETTINGS]
 $listing_level			2
 ;$symbol_table			3
-$putmess_logfile        ..\log\ide%p.log
+$putmess_logfile        .\log\ide%p.log
 $resources_output       .\resources\
 $variation				ACMELIB
 
@@ -36,7 +35,7 @@ IDETITLE=Uniface eLearning
 ; Custom worksheets
 ;IDE_DEFINE_WORKSHEETS_CPT=HTML_PREVIEW
 ;IDE_DEFINE_WORKSHEETS_PRJ=MAINT_PROJECT
-IDE_DEFINE_USERMENUS = VC_UPDATED
+;IDE_DEFINE_USERMENUS=VC_UPDATED
 
 ; By default, the templates and palettes used in the Resource Browsers cannot 
 ; be opened in an editor. If the user wants to create and maintain user defined 
