@@ -1,10 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8' ?>
 <!-- Created by Uniface - (C) Uniface B.V. All rights reserved -->
 <!DOCTYPE UNIFACE PUBLIC "UNIFACE.DTD" "UNIFACE.DTD">
-<UNIFACE release="10.3" repversion="6" xmlengine="2.0">
+<UNIFACE release="10.3" repversion="7" xmlengine="2.0">
 <TABLE>
-<DSC name="UPROJECT" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UPROJECT" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="ULABEL" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
 <FLD name="UTIMESTAMP" seqno="2" type="E" level="2" pack="0" scale="0" length="15"
@@ -38,7 +38,7 @@
 </DSC>
 <OCC>
 <DAT name="ULABEL">UPALETTE_PRJ</DAT>
-<DAT name="UTIMESTAMP">2016-08-16T21:23:58.00</DAT>
+<DAT name="UTIMESTAMP">2020-01-29T14:14:44.00</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
 <DAT name="UDESCR" xml:space='preserve'>Palette of objects for Projects</DAT>
@@ -46,8 +46,8 @@
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFAPS" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFAPS" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="ULABEL" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -68,7 +68,7 @@
 <DAT name="ULABEL">UAPC</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Application Shell: Character Mode</DAT>
+<DAT name="UDESCR" xml:space='preserve'> Defines layout and behavior of a character mode application</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Application Shell: Character Mode</DAT>
 </OCC>
 <OCC>
@@ -76,7 +76,7 @@
 <DAT name="ULABEL">UAPM</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Application Shell: Mobile</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Defines build properties for generating mobile application</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Application Shell: Mobile</DAT>
 </OCC>
 <OCC>
@@ -84,7 +84,7 @@
 <DAT name="ULABEL">UAPS</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Application Shell: Windows</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Defines appearance and behavior of desktop application window</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Application Shell: Windows</DAT>
 </OCC>
 <OCC>
@@ -92,13 +92,13 @@
 <DAT name="ULABEL">UAPU</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Application Shell: Userver</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Defines behavior of Uniface (Web) Server</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Application Shell: Userver</DAT>
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFCPT" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFCPT" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="ULABEL" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -119,7 +119,7 @@
 <DAT name="ULABEL">UCDSP</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Component: Dynamic Server Page</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Defines dynamic web page content (full or partial page updates)</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Component: Dynamic Server Page</DAT>
 </OCC>
 <OCC>
@@ -127,7 +127,7 @@
 <DAT name="ULABEL">UCESV</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Component: Entity Service</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Defines business rules for a single entity</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Component: Entity Service</DAT>
 </OCC>
 <OCC>
@@ -135,7 +135,7 @@
 <DAT name="ULABEL">UCFRM</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Component: Modal Form</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Defines modal component for a desktop application</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Component: Modal Form</DAT>
 </OCC>
 <OCC>
@@ -143,7 +143,7 @@
 <DAT name="ULABEL">UCFRN</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Component: Non-modal Form</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Defines non-modal component for a desktop application</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Component: Non-modal Form</DAT>
 </OCC>
 <OCC>
@@ -151,7 +151,7 @@
 <DAT name="ULABEL">UCRPT</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Component: Report</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Defines a report layout and print processing</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Component: Report</DAT>
 </OCC>
 <OCC>
@@ -159,7 +159,7 @@
 <DAT name="ULABEL">UCSVC</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Component: Service</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Defines application or object processing</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Component: Service</DAT>
 </OCC>
 <OCC>
@@ -167,7 +167,7 @@
 <DAT name="ULABEL">UCUSP</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Component: Static Server Page</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Defines static web page content (full page updates only)</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Component: Static Server Page</DAT>
 </OCC>
 <OCC>
@@ -175,7 +175,7 @@
 <DAT name="ULABEL">UMDSP</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Modeled Component: Dynamic Server Page</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Model for deriving dynamic server page (DSP) components</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Modeled Component: Dynamic Server Page</DAT>
 </OCC>
 <OCC>
@@ -183,7 +183,7 @@
 <DAT name="ULABEL">UMESV</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Modeled Component: Entity Service</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Model for deriving entity service (ESV) components</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Modeled Component: Entity Service</DAT>
 </OCC>
 <OCC>
@@ -191,7 +191,7 @@
 <DAT name="ULABEL">UMFRM</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Modeled Component: Modal Form</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Model for deriving modal form (FRM) components</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Modeled Component: Modal Form</DAT>
 </OCC>
 <OCC>
@@ -199,7 +199,7 @@
 <DAT name="ULABEL">UMFRN</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Modeled Component: Non-modal Form</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Model for deriving non-modal form (FRM) components</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Modeled Component: Non-modal Form</DAT>
 </OCC>
 <OCC>
@@ -207,7 +207,7 @@
 <DAT name="ULABEL">UMRPT</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Modeled Component: Report</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Model for deriving report (RPT) components</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Modeled Component: Report</DAT>
 </OCC>
 <OCC>
@@ -215,7 +215,7 @@
 <DAT name="ULABEL">UMSVC</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Modeled Component: Service</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Model for deriving service (SVC) components</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Modeled Component: Service</DAT>
 </OCC>
 <OCC>
@@ -223,13 +223,13 @@
 <DAT name="ULABEL">UMUSP</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Modeled Component: Static Server Page</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Model for deriving static server page (USP) components</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Modeled Component: Static Server Page</DAT>
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFENT" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFENT" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="U_VLAB" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -253,8 +253,8 @@
 <DAT name="U_TLAB">UENT</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Modeled Entity: Not in database</DAT>
-<DAT name="UALT_NAME" xml:space='preserve'>Modeled Entity: Not in database</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Models non-persistent data or controls, and related behavior</DAT>
+<DAT name="UALT_NAME" xml:space='preserve'>Non-DBMS Entity: Modeled Entity</DAT>
 </OCC>
 <OCC>
 <DAT name="UPROJECT">UPALETTE_PRJ</DAT>
@@ -262,13 +262,40 @@
 <DAT name="U_TLAB">UENTDB</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Modeled Entity: In database</DAT>
-<DAT name="UALT_NAME" xml:space='preserve'>Modeled Entity: In database</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Models database table and related default processing</DAT>
+<DAT name="UALT_NAME" xml:space='preserve'>DBMS Entity: Modeled Entity</DAT>
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFLIBINC" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFLIBPRC" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
+<FLD name="UNAME" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,4" idxsnr="102,1" />
+<FLD name="UKVERSION" seqno="3" type="N" level="2" pack="10" scale="0" length="2"
+ pointer="0" inum="1" ufocc="0" idxnum="2" idxsnr="1" />
+<FLD name="UMVERSION" seqno="4" type="N" level="2" pack="10" scale="0" length="2"
+ pointer="0" inum="1" ufocc="0" idxnum="3" idxsnr="1" />
+<FLD name="UDESCR" seqno="5" type="S" level="2" pack="13" scale="0" length="64"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UALT_NAME" seqno="6" type="S" level="2" pack="13" scale="0" length="64"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UWAORDER" seqno="7" type="N" level="2" pack="7" scale="0" length="5"
+ pointer="0" inum="0" ufocc="0" />
+</DSC>
+<OCC>
+<DAT name="UPROJECT">UPALETTE_PRJ</DAT>
+<DAT name="UNAME">ULIBPRC</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Library containing global Procscripts</DAT>
+<DAT name="UALT_NAME" xml:space='preserve'>Global ProcScript Library</DAT>
+</OCC>
+</TABLE>
+<TABLE>
+<DSC name="UREFLIBINC" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="UNAME" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -289,13 +316,13 @@
 <DAT name="UNAME">ULIBINC</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>IncludeScript Library</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Library containing include scripts</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>IncludeScript Library</DAT>
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFLIBSNP" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFLIBSNP" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="UNAME" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -316,13 +343,13 @@
 <DAT name="UNAME">ULIBSNP</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Snippet library</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Library containing code snippets</DAT>
 <DAT name="UALT_NAME" xml:space='preserve'>Snippet library</DAT>
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFPRJ" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
- rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFPRJ" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="ULABEL" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -343,7 +370,7 @@
 <DAT name="ULABEL">UPRJ</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
-<DAT name="UDESCR">Project</DAT>
+<DAT name="UDESCR" xml:space='preserve'>New project</DAT>
 <DAT name="UALT_NAME">Project</DAT>
 </OCC>
 </TABLE>
