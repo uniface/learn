@@ -1,0 +1,230 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<!-- Created by Uniface - (C) Uniface B.V. All rights reserved -->
+<!DOCTYPE UNIFACE PUBLIC "UNIFACE.DTD" "UNIFACE.DTD">
+<UNIFACE release="10.3" repversion="6" xmlengine="2.0">
+<DSC name="UPROJECT" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<FLD name="ULABEL" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
+<FLD name="UTIMESTAMP" seqno="2" type="E" level="2" pack="0" scale="0" length="15"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UKVERSION" seqno="3" type="N" level="2" pack="10" scale="0" length="2"
+ pointer="0" inum="1" ufocc="0" idxnum="2" idxsnr="1" />
+<FLD name="UMVERSION" seqno="4" type="N" level="2" pack="10" scale="0" length="2"
+ pointer="0" inum="1" ufocc="0" idxnum="3" idxsnr="1" />
+<FLD name="UDESCR" seqno="5" type="S" level="2" pack="13" scale="0" length="64"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UUARNAME" seqno="6" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UUARVERSION" seqno="7" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UPURPOSE" seqno="8" type="S" level="2" pack="1" scale="0" length="1"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UALT_NAME" seqno="9" type="S" level="2" pack="13" scale="0" length="64"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UWAORDER" seqno="10" type="N" level="2" pack="7" scale="0" length="5"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UCOMMENT" seqno="11" type="S" level="2" pack="141" scale="0" length="0"
+ pointer="0" inum="0" ufocc="0" varinfo=",0,0,0,,1,0,1,\1D,0,0,0,," />
+<FLD name="UUARREADME" seqno="12" type="S" level="2" pack="141" scale="0" length="0"
+ pointer="0" inum="0" ufocc="0" varinfo=",1,0,2,\1F\C2,0,0,0,,0,0,0,," />
+<FLD name="USTANDARDOUT" seqno="13" type="S" level="2" pack="141" scale="0" length="0"
+ pointer="0" inum="0" ufocc="0" varinfo=",1,0,2,\1F\C3,0,0,0,,0,0,0,," />
+<FLD name="UCONNECTIVITYOUT" seqno="14" type="S" level="2" pack="141" scale="0" length="0"
+ pointer="0" inum="0" ufocc="0" varinfo=",1,0,2,\1F\C4,0,0,0,,0,0,0,," />
+<FLD name="UEXTERNALOUT" seqno="15" type="S" level="2" pack="141" scale="0" length="0"
+ pointer="0" inum="0" ufocc="0" varinfo=",1,0,2,\1F\C5,0,0,0,,0,0,0,," />
+</DSC>
+<OCC>
+<DAT name="ULABEL">ACME</DAT>
+<DAT name="UTIMESTAMP">2020-03-19T14:30:41.00</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UPURPOSE">N</DAT>
+</OCC>
+</TABLE>
+<TABLE>
+<DSC name="UREFCPT" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
+<FLD name="ULABEL" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,4" idxsnr="102,1" />
+<FLD name="UKVERSION" seqno="3" type="N" level="2" pack="10" scale="0" length="2"
+ pointer="0" inum="1" ufocc="0" idxnum="2" idxsnr="1" />
+<FLD name="UMVERSION" seqno="4" type="N" level="2" pack="10" scale="0" length="2"
+ pointer="0" inum="1" ufocc="0" idxnum="3" idxsnr="1" />
+<FLD name="UDESCR" seqno="5" type="S" level="2" pack="13" scale="0" length="64"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UALT_NAME" seqno="6" type="S" level="2" pack="13" scale="0" length="64"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UWAORDER" seqno="7" type="N" level="2" pack="7" scale="0" length="5"
+ pointer="0" inum="0" ufocc="0" />
+</DSC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="ULABEL">COUNTRYSVC</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="ULABEL">EXAMPLE</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="ULABEL">EXSTATEFROMMENU</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="ULABEL">ICOUNTRY</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Multi-Occurrence Form</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="ULABEL">INHERIT1</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="ULABEL">INHERIT2</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="ULABEL">INHERIT3</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="ULABEL">MADDRESS</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="ULABEL">MCOUNTRY</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="ULABEL">MSTATE</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="ULABEL">STATESERV</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+</TABLE>
+<TABLE>
+<DSC name="UREFENT" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
+<FLD name="U_VLAB" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,4" idxsnr="102,1" />
+<FLD name="U_TLAB" seqno="3" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,4" idxsnr="103,2" />
+<FLD name="UKVERSION" seqno="4" type="N" level="2" pack="10" scale="0" length="2"
+ pointer="0" inum="1" ufocc="0" idxnum="2" idxsnr="1" />
+<FLD name="UMVERSION" seqno="5" type="N" level="2" pack="10" scale="0" length="2"
+ pointer="0" inum="1" ufocc="0" idxnum="3" idxsnr="1" />
+<FLD name="UDESCR" seqno="6" type="S" level="2" pack="13" scale="0" length="64"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UALT_NAME" seqno="7" type="S" level="2" pack="13" scale="0" length="64"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UWAORDER" seqno="8" type="N" level="2" pack="7" scale="0" length="5"
+ pointer="0" inum="0" ufocc="0" />
+</DSC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="U_VLAB">ACMECUST</DAT>
+<DAT name="U_TLAB">ADDRESS</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="U_VLAB">ACMECUST</DAT>
+<DAT name="U_TLAB">COUNTRY</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="U_VLAB">ACMECUST</DAT>
+<DAT name="U_TLAB">COUNTRYFLAG</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="U_VLAB">ACMECUST</DAT>
+<DAT name="U_TLAB">CUSTOMER</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="U_VLAB">ACMECUST</DAT>
+<DAT name="U_TLAB">STATE</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="U_VLAB">ACMEORD</DAT>
+<DAT name="U_TLAB">DELIVERYMETHOD</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="U_VLAB">ACMEORD</DAT>
+<DAT name="U_TLAB">ORDERLINE</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="U_VLAB">ACMEORD</DAT>
+<DAT name="U_TLAB">ORDERS</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="U_VLAB">ACMESTOCK</DAT>
+<DAT name="U_TLAB">ARTCAT</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="U_VLAB">ACMESTOCK</DAT>
+<DAT name="U_TLAB">ARTICLE</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+<OCC>
+<DAT name="UPROJECT">ACME</DAT>
+<DAT name="U_VLAB">ACMESTOCK</DAT>
+<DAT name="U_TLAB">CATEGORY</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+</OCC>
+</TABLE>
+</UNIFACE>
