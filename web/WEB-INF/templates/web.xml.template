@@ -16,11 +16,12 @@
     <servlet-class>
       com.compuware.uniface.urd.WRDServlet
     </servlet-class>
-
+	<!-- Control Max File Upload Size, uncomment to use
     <init-param>
       <param-name>MAXFILEUPLOADSIZE</param-name>
       <param-value>1000000</param-value>
     </init-param>
+	-->
     <init-param>
       <param-name>TESTABLE</param-name>
       <param-value>true</param-value>
@@ -46,18 +47,22 @@
     <servlet-class>
       com.compuware.uniface.urd.WRDServlet
     </servlet-class>
-
+	<!-- Control Max File Upload Size, uncomment to use
     <init-param>
       <param-name>MAXFILEUPLOADSIZE</param-name>
       <param-value>1000000</param-value>
     </init-param>
+	-->
     <init-param>
        <param-name>USERUNPREFIX</param-name>
        <param-value>false</param-value>
     </init-param>
     <init-param>
        <param-name>ASVTIMEOUT</param-name>
+	   <!-- Default time before timeout (in seconds) = 5 minutes, extended to 15 minutes to prevent timeout while performing a longer debug
        <param-value>300</param-value>
+	   -->
+       <param-value>900</param-value>
     </init-param>
     <init-param>
        <param-name>TESTABLE</param-name>
@@ -72,7 +77,8 @@
     <!-- Do not use set them in a stand-alone web application -->
   </servlet>
 
-  <!-- Uniface W(eb) R(equest) D(ispatcher) Servlet for debugging purposes -->
+  <!-- Uniface W(eb) R(equest) D(ispatcher) Servlet for URL Rewrite purposes -->
+  <!-- Uncomment to use
   <servlet>
     <servlet-name>
       wrd_rewrite
@@ -104,7 +110,9 @@
 
     <!-- The settings ERRORDIR, RESOURCEDIR and WEBAPPURL are made optional -->
     <!-- Do not use set them in a stand-alone web application -->
+  <!--
   </servlet>
+  -->
 
   <!-- Uniface S(oap) R(equest) D(ispatcher) Servlet -->
   <servlet>
@@ -136,5 +144,10 @@
     <url-pattern>/debug/*</url-pattern>
   </servlet-mapping>
 
-</web-app>
+  <!-- Uncomment to reduce Tomcat Session Timeout to 1 minute for testing
+  <session-config>
+    <session-timeout>1</session-timeout>
+  </session-config>
+  -->
 
+</web-app>
