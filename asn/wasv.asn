@@ -12,8 +12,8 @@ $variation = ACMELIB
 usys:usys.uar
 
 [FILES]
-*.log	..\log\*.log
-*.hts	..\hts\*.hts
+*.log	.\log\*.log
+*.hts	.\hts\*.hts
 
 [WEB]
 ; The following assignment setting is used to calculate the hash-values to protect non-editable fields.
