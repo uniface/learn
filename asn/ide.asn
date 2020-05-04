@@ -1,17 +1,41 @@
+; IDE assignment file for eLearning
+; Includes settings from USYSADM:ide.asn then overrides some of them
+
 [RESOURCES]
 ;additional.uar
 .\resources\
 
+; Include standard Uniface IDE assignment file contents
 #file USYSADM:ide.asn
 
+; Override database settings from included ide.asn
 #file .\asn\dbms.asn
 
+
 [SETTINGS]
-$listing_level			2
-;$symbol_table			3
-$putmess_logfile        .\log\ide%p.log
-$resources_output       .\resources\
-$variation				ACMELIB
+; Copy the message frame contents to a session specific log file.
+;$PUTMESS_LOGFILE = usyslog:ide_%p.log
+$PUTMESS_LOGFILE = .\log\ide%p.log
+
+; Compiler Setting: Generate a script listing with or without precompiler directives.
+    ; 0 = do not generate (default) 
+    ; 1 = enable without precompiler directives  
+    ; 2 = enable with precompiler directives
+;$LISTING_LEVEL = 2
+
+; Compiler Setting: Specify whether object references are generated during compilation,
+; and where they are located.
+    ; 0 = do not generate (default) 
+    ; 1 = generate as symbol table 
+    ; 2 = generate as cross-reference data 
+    ; 3 = generate as symbol table and cross-reference data
+;$SYMBOL_TABLE = 3
+
+; Location to write compiled resources
+$RESOURCES_OUTPUT = .\resources\
+
+; Library/Variation to use
+$VARIATION = ACMELIB
 
 
 [FILES]
@@ -30,6 +54,7 @@ TEST_COMMAND_CPT_WEB = cmd /c start http://localhost:8080/u10learn/wrd/%CptName
 ; Command spawned to test (non-WEB) components. Default value if this logical is not explicitly defined:
 ;TEST_COMMAND_CPT = %ExeFile /adm=%AdmDir /dir=%WorkDir /asn=%AsnFile /ini=%IniFile /tst %CptName
 
+; Customize the title of the IDE.
 IDETITLE=Uniface eLearning
 
 ; Custom worksheets
@@ -43,9 +68,9 @@ IDETITLE=Uniface eLearning
 ; open templates should be enabled: default/disabled = 0 ; enabled = 1
 ; NOTE: Templates and palettes provided by Uniface should not be modified
 ; without understanding the impact of such modifications.
-
-allow_browse_templates = 0
-;allow_browse_templates = 1
+    ; 0 = disabled (default) 
+    ; 1 = enabled
+ALLOW_BROWSE_TEMPLATES = 0    
 
 ;; Override default palettes for Component Editor:
 ;;ComponentEditor_DefineStructure_ResourceBrowser_DefaultPalette_DSP  = cpt:UPALETTE_DSP
