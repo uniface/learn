@@ -142,7 +142,7 @@
 </DSC>
 <OCC>
 <DAT name="UTIMESTAMP">2019-10-24T12:28:25.00</DAT>
-<DAT name="ULABEL">HELLOWORLD</DAT>
+<DAT name="ULABEL">HELLO_WORLD</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">3</DAT>
 <DAT name="UDESCR" xml:space='preserve'>Component - Dynamic Server Page</DAT>
@@ -527,7 +527,7 @@ end</DAT>
 <OCC>
 <DAT name="ULABEL">ENTITY</DAT>
 <DAT name="UBASE">NOMODEL</DAT>
-<DAT name="UFORM">HELLOWORLD</DAT>
+<DAT name="UFORM">HELLO_WORLD</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">4</DAT>
 <DAT name="UDESCR" xml:space='preserve'>Non-database entity</DAT>
