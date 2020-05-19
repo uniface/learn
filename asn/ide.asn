@@ -50,12 +50,12 @@ S_MATH		$ASV:S_MATH
 [LOGICALS]
 ; Command spawned to test WEB components (USP and DSP). Default value if this logical is not explicitly defined:
 ;TEST_COMMAND_CPT_WEB = cmd /c start http://localhost:%TomcatPort/uniface/wrd/%CptName
-TEST_COMMAND_CPT_WEB = cmd /c start http://localhost:8080/u10learn/wrd/%CptName
+TEST_COMMAND_CPT_WEB = cmd /c start http://localhost:%TomcatPort/u10learn/wrd/%CptName
 ; Command spawned to test (non-WEB) components. Default value if this logical is not explicitly defined:
 ;TEST_COMMAND_CPT = %ExeFile /adm=%AdmDir /dir=%WorkDir /asn=%AsnFile /ini=%IniFile /tst %CptName
 
 ; Customize the title of the IDE.
-IDETITLE=Uniface eLearning
+IDETITLE=Uniface Learning
 
 ; Custom worksheets
 ;IDE_DEFINE_WORKSHEETS_CPT=HTML_PREVIEW
