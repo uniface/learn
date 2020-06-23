@@ -21,7 +21,15 @@ $PUTMESS_LOGFILE = .\log\ide%p.log
     ; 0 = do not generate (default) 
     ; 1 = enable without precompiler directives  
     ; 2 = enable with precompiler directives
-;$LISTING_LEVEL = 2
+;$LISTING_LEVEL = 0
+$LISTING_LEVEL = 2
+
+; Compiler Setting: Specify the desired message level for compilation messages. 
+    ; 0 = error, warning, and information
+    ; 1 = error and warning 
+    ; 2 = error only (default)
+;$MESSAGE_LEVEL = 2
+$MESSAGE_LEVEL = 1
 
 ; Compiler Setting: Specify whether object references are generated during compilation,
 ; and where they are located.
@@ -57,10 +65,17 @@ TEST_COMMAND_CPT_WEB = cmd /c start http://localhost:%TomcatPort/u10learn/wrd/%C
 ; Customize the title of the IDE.
 IDETITLE=Uniface Learning
 
-; Custom worksheets
-;IDE_DEFINE_WORKSHEETS_CPT=HTML_PREVIEW
-;IDE_DEFINE_WORKSHEETS_PRJ=MAINT_PROJECT
-;IDE_DEFINE_USERMENUS=VC_UPDATED
+; Add User-Defined Worksheets To Editors:
+; IDE_DEFINE_WORKSHEETS_PRJ =
+; IDE_DEFINE_WORKSHEETS_APS =
+; IDE_DEFINE_WORKSHEETS_CPT =
+; IDE_DEFINE_WORKSHEETS_ENT =
+; IDE_DEFINE_WORKSHEETS_LIBINC =
+; IDE_DEFINE_WORKSHEETS_LIBSNP =
+; IDE_DEFINE_WORKSHEETS_LIBPRC =
+
+; Add User-Defined Menu Items:
+; IDE_DEFINE_USERMENUS =
 
 ; By default, the templates and palettes used in the Resource Browsers cannot 
 ; be opened in an editor. If the user wants to create and maintain user defined 
