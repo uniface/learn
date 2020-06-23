@@ -1,0 +1,892 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<!-- Created by Uniface - (C) Uniface B.V. All rights reserved -->
+<!DOCTYPE UNIFACE PUBLIC "UNIFACE.DTD" "UNIFACE.DTD">
+<UNIFACE release="10.3" repversion="7" xmlengine="2.0">
+<TABLE>
+<DSC name="ULIBMSG" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<FLD name="UNAME" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
+<FLD name="UKVERSION" seqno="2" type="N" level="2" pack="10" scale="0" length="2"
+ pointer="0" inum="1" ufocc="0" idxnum="2" idxsnr="1" />
+<FLD name="UMVERSION" seqno="3" type="N" level="2" pack="10" scale="0" length="2"
+ pointer="0" inum="1" ufocc="0" idxnum="3" idxsnr="1" />
+<FLD name="UDESCR" seqno="4" type="S" level="2" pack="13" scale="0" length="64"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UTIMESTAMP" seqno="5" type="E" level="2" pack="0" scale="0" length="15"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UPURPOSE" seqno="6" type="S" level="2" pack="1" scale="0" length="1"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UALT_NAME" seqno="7" type="S" level="2" pack="13" scale="0" length="64"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UWAORDER" seqno="8" type="N" level="2" pack="7" scale="0" length="5"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UCOMMENT" seqno="9" type="S" level="2" pack="141" scale="0" length="0"
+ pointer="0" inum="0" ufocc="0" varinfo=",0,0,0,,1,0,1,\1D,0,0,0,," />
+</DSC>
+<OCC>
+<DAT name="UNAME">ACMELIB</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UTIMESTAMP">2019-04-26T10:58:21.00</DAT>
+</OCC>
+</TABLE>
+<TABLE>
+<DSC name="UMSG" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
+ rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<FLD name="UVAR" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="4" ufocc="0" mandatory="yes" idxnum="1,4,6,7" idxsnr="101,1,1,1" />
+<FLD name="ULABEL" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
+ pointer="0" inum="4" ufocc="0" mandatory="yes" idxnum="1,4,5,6" idxsnr="102,3,1,2" />
+<FLD name="ULAN" seqno="3" type="S" level="2" pack="0" scale="0" length="3"
+ pointer="0" inum="3" ufocc="0" mandatory="yes" idxnum="1,4,5" idxsnr="103,2,2" />
+<FLD name="MSGTYPE" seqno="4" type="S" level="2" pack="1" scale="0" length="1"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UKVERSION" seqno="5" type="N" level="2" pack="10" scale="0" length="2"
+ pointer="0" inum="1" ufocc="0" idxnum="2" idxsnr="1" />
+<FLD name="UMVERSION" seqno="6" type="N" level="2" pack="10" scale="0" length="2"
+ pointer="0" inum="1" ufocc="0" idxnum="3" idxsnr="1" />
+<FLD name="UDESCR" seqno="7" type="S" level="2" pack="13" scale="0" length="64"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UVPOS" seqno="8" type="S" level="2" pack="0" scale="0" length="6"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UHPOS" seqno="9" type="S" level="2" pack="0" scale="0" length="6"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UVSIZ" seqno="10" type="S" level="2" pack="0" scale="0" length="6"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UHSIZ" seqno="11" type="S" level="2" pack="0" scale="0" length="6"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UAUDIO" seqno="12" type="N" level="2" pack="10" scale="0" length="1"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UALT_NAME" seqno="13" type="S" level="2" pack="13" scale="0" length="64"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UWAORDER" seqno="14" type="N" level="2" pack="7" scale="0" length="5"
+ pointer="0" inum="0" ufocc="0" />
+<FLD name="UCOMMENT" seqno="15" type="S" level="2" pack="141" scale="0" length="0"
+ pointer="0" inum="0" ufocc="0" varinfo=",0,0,0,,1,0,1,\1D,0,0,0,," />
+<FLD name="UTEXT" seqno="16" type="S" level="2" pack="141" scale="0" length="0"
+ pointer="0" inum="0" ufocc="0" varinfo=",1,0,2,\1F\C2,0,0,0,,0,0,0,," />
+</DSC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ADDCOUNTY</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Département</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ADDCOUNTY</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">County</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ADDHOUSE</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UTEXT">Maison</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ADDHOUSE</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UTEXT">House</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ADDPOSTCODE</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Code Postal</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ADDPOSTCODE</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Post Code</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ADDSTREETNAME</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UTEXT">Rue</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ADDSTREETNAME</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UTEXT">Street</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ADDTELNO</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Téléphone</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ADDTELNO</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Telephone</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ADDTOWN</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Ville</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ADDTOWN</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Town</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ARTNAME</DAT>
+<DAT name="ULAN">NL</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Article NM</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Naam</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ARTNAME</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Article NM</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Name</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ARTPRICE</DAT>
+<DAT name="ULAN">NL</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Article PRICE</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Prijs</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ARTPRICE</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Article PRICE</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Price</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CFLFLAG</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Drapeau du Pays</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CFLFLAG</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Country Flag</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COUIDCOUNTRY</DAT>
+<DAT name="ULAN">D</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Country Code</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Landes Kode</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COUIDCOUNTRY</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Code du pays</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COUIDCOUNTRY</DAT>
+<DAT name="ULAN">I</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>label - Italian</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Codice Paese
+</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COUIDCOUNTRY</DAT>
+<DAT name="ULAN">NL</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Dutch Country Code</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COUIDCOUNTRY</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Country Code</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COUNM</DAT>
+<DAT name="ULAN">D</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Country Name</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Landes Naam</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COUNM</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Nom du pays</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COUNM</DAT>
+<DAT name="ULAN">I</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR">label</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Name Paese</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COUNM</DAT>
+<DAT name="ULAN">NL</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Country Name</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Dutch Name</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COUNM</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Country Name</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COUTELCODE</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Code téléphonique</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COUTELCODE</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Telephone Code</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">COU_FLAG</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Country Flag</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSEMAIL</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">E-mail</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSEMAIL</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Email address</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSFIRSTNAME</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Prénom</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSFIRSTNAME</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>First Name</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSHINTTEXT</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Texte Soupçon</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSHINTTEXT</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Hint Text</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSLASTNAME</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Nom de famille</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSLASTNAME</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Last Name</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSPASSWORD</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Mot de passe</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSPASSWORD</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Password</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSREGDATE</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Date d'enregistrement</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSREGDATE</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Registration Date</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSTITLE</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Titre</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">CUSTITLE</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Title</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">DELCOSTPERUNIT</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Coût par gramme</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">DELCOSTPERUNIT</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Cost Per Gram</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">DELDESCR</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Description</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">DELDESCR</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Description</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">DELNM</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Méthod de livraison</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">DELNM</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Delivery Method Name</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">FTITICOUNTRYLANG</DAT>
+<DAT name="ULAN">D</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Labels in German</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">FTITICOUNTRYLANG</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Labels en Francais</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">FTITICOUNTRYLANG</DAT>
+<DAT name="ULAN">I</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR">Labels</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Labels in Italian</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">FTITICOUNTRYLANG</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Labels in English</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">OLIORDERLINETOTA</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Total des Order Lines</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">OLIORDERLINETOTA</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Order Line Total</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">OLIQNT</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Quantité</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">OLIQNT</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Quantity</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ORDORDDATE</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Date de la Commande</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ORDORDDATE</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Order Date</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ORDORDNUM</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Numéro de commande</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ORDORDNUM</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Order Number</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ORDSHIPTONAME</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Navire au Nom</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ORDSHIPTONAME</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Ship To Name</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ORDSHPDATE</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Date d'expédition</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ORDSHPDATE</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Shipping Date</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ORDSTATUS</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Statut de la Commande</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ORDSTATUS</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Order Status</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ORDTOTAL</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT">Total</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">ORDTOTAL</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Order Total</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">STASTATECODE</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Code d'état</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">STASTATECODE</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>State Code</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">STASTATENAME</DAT>
+<DAT name="ULAN">F</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>Nom de l'état</DAT>
+</OCC>
+<OCC>
+<DAT name="UVAR">ACMELIB</DAT>
+<DAT name="ULABEL">STASTATENAME</DAT>
+<DAT name="ULAN">USA</DAT>
+<DAT name="MSGTYPE">M</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">2</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Label Text</DAT>
+<DAT name="UAUDIO">0</DAT>
+<DAT name="UTEXT" xml:space='preserve'>State Name</DAT>
+</OCC>
+</TABLE>
+</UNIFACE>
