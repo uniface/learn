@@ -3,8 +3,8 @@
 <!DOCTYPE UNIFACE PUBLIC "UNIFACE.DTD" "UNIFACE.DTD">
 <UNIFACE release="10.3" repversion="7" xmlengine="2.0">
 <TABLE>
-<DSC name="UPROJECT" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UPROJECT" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="ULABEL" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
 <FLD name="UTIMESTAMP" seqno="2" type="E" level="2" pack="0" scale="0" length="15"
@@ -38,7 +38,7 @@
 </DSC>
 <OCC>
 <DAT name="ULABEL">UPALETTE_PRJ</DAT>
-<DAT name="UTIMESTAMP">2020-01-29T14:14:44.00</DAT>
+<DAT name="UTIMESTAMP">2020-06-16T15:50:01.00</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
 <DAT name="UDESCR" xml:space='preserve'>Palette of objects for Projects</DAT>
@@ -46,8 +46,8 @@
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFAPS" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFAPS" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="ULABEL" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -97,8 +97,8 @@
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFCPT" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFCPT" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="ULABEL" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -228,8 +228,8 @@
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFENT" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFENT" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="U_VLAB" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -254,7 +254,7 @@
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
 <DAT name="UDESCR" xml:space='preserve'>Models non-persistent data or controls, and related behavior</DAT>
-<DAT name="UALT_NAME" xml:space='preserve'>Non-DBMS Entity: Modeled Entity</DAT>
+<DAT name="UALT_NAME" xml:space='preserve'>Modeled Entity: Non-DBMS Entity</DAT>
 </OCC>
 <OCC>
 <DAT name="UPROJECT">UPALETTE_PRJ</DAT>
@@ -263,12 +263,12 @@
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">2</DAT>
 <DAT name="UDESCR" xml:space='preserve'>Models database table and related default processing</DAT>
-<DAT name="UALT_NAME" xml:space='preserve'>DBMS Entity: Modeled Entity</DAT>
+<DAT name="UALT_NAME" xml:space='preserve'>Modeled Entity: DBMS Entity</DAT>
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFLIBPRC" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFLIBPRC" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="UNAME" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -294,8 +294,8 @@
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFLIBINC" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFLIBINC" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="UNAME" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -321,8 +321,8 @@
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFLIBSNP" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFLIBSNP" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="UNAME" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -348,8 +348,8 @@
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UREFPRJ" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UREFPRJ" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UPROJECT" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,5" idxsnr="101,1" />
 <FLD name="ULABEL" seqno="2" type="S" level="2" pack="0" scale="0" length="60"

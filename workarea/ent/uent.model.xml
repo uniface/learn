@@ -3,8 +3,8 @@
 <!DOCTYPE UNIFACE PUBLIC "UNIFACE.DTD" "UNIFACE.DTD">
 <UNIFACE release="10.3" repversion="7" xmlengine="2.0">
 <TABLE>
-<DSC name="UCTABLE" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UCTABLE" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UTIMESTAMP" seqno="1" type="E" level="2" pack="0" scale="0" length="15"
  pointer="0" inum="0" ufocc="0" />
 <FLD name="U_VLAB" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -25,8 +25,8 @@
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UCGROUP" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UCGROUP" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="U_GLAB" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
 <FLD name="U_VLAB" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
