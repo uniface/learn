@@ -3,8 +3,8 @@
 <!DOCTYPE UNIFACE PUBLIC "UNIFACE.DTD" "UNIFACE.DTD">
 <UNIFACE release="10.3" repversion="7" xmlengine="2.0">
 <TABLE>
-<DSC name="UCTABLE" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UCTABLE" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="UTIMESTAMP" seqno="1" type="E" level="2" pack="0" scale="0" length="15"
  pointer="0" inum="0" ufocc="0" />
 <FLD name="U_VLAB" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -17,7 +17,7 @@
  pointer="0" inum="1" ufocc="0" idxnum="3" idxsnr="1" />
 </DSC>
 <OCC>
-<DAT name="UTIMESTAMP">2020-03-25T18:24:56.00</DAT>
+<DAT name="UTIMESTAMP">2020-09-17T13:29:04.00</DAT>
 <DAT name="U_VLAB">ACMEORD</DAT>
 <DAT name="U_TLAB">ORDERS</DAT>
 <DAT name="UKVERSION">4</DAT>
@@ -25,8 +25,8 @@
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UCGROUP" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UCGROUP" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="U_GLAB" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
 <FLD name="U_VLAB" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -239,8 +239,8 @@ return(0)
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UCFIELD" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UCFIELD" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="U_FLAB" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,2" idxsnr="101,1" />
 <FLD name="U_VLAB" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -352,7 +352,7 @@ return(0)
 <DAT name="IS_EXTERNAL">T</DAT>
 <DAT name="IS_STATIC">F</DAT>
 <DAT name="IS_CONTROL">F</DAT>
-<DAT name="U_INT">C40</DAT>
+<DAT name="U_INT">C36</DAT>
 <DAT name="DATA_SYNTAX">MUL</DAT>
 <DAT name="UCOMMENT">FT:FOREIGNKEY</DAT>
 <DAT name="U_DESC" xml:space='preserve'>Foreign Key</DAT>
@@ -373,7 +373,7 @@ return(0)
 <DAT name="IS_EXTERNAL">T</DAT>
 <DAT name="IS_STATIC">F</DAT>
 <DAT name="IS_CONTROL">F</DAT>
-<DAT name="U_INT">C40</DAT>
+<DAT name="U_INT">C36</DAT>
 <DAT name="U_DESC" xml:space='preserve'>Foreign Key</DAT>
 <DAT name="FRM_WIDGETTYPE">EDITBOX</DAT>
 <DAT name="DSP_WIDGETTYPE">EDITBOX</DAT>
@@ -392,7 +392,7 @@ return(0)
 <DAT name="IS_EXTERNAL">T</DAT>
 <DAT name="IS_STATIC">F</DAT>
 <DAT name="IS_CONTROL">F</DAT>
-<DAT name="U_INT">C40</DAT>
+<DAT name="U_INT">C36</DAT>
 <DAT name="DATA_SYNTAX">MUL</DAT>
 <DAT name="UCOMMENT">FT:FOREIGNKEY</DAT>
 <DAT name="U_DESC" xml:space='preserve'>Foreign Key</DAT>
@@ -413,7 +413,7 @@ return(0)
 <DAT name="IS_EXTERNAL">T</DAT>
 <DAT name="IS_STATIC">F</DAT>
 <DAT name="IS_CONTROL">F</DAT>
-<DAT name="U_INT">C40</DAT>
+<DAT name="U_INT">C36</DAT>
 <DAT name="UCOMMENT">FT:PRIMARYKEY</DAT>
 <DAT name="U_DESC">ID</DAT>
 <DAT name="FRM_WIDGETTYPE">EDITBOX</DAT>
@@ -434,7 +434,11 @@ return(0)
 <DAT name="IS_CONTROL">F</DAT>
 <DAT name="U_INT">D</DAT>
 <DAT name="DATA_SYNTAX">MAN</DAT>
-<DAT name="U_DESC">$text(OrdordDate)</DAT>
+<DAT name="UCOMMENT" xml:space='preserve'>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Verdana;}{\f1\fnil Verdana;}}
+\viewkind4\uc1\pard\f0\fs16 Use $text(OrdordDate) for language-independent label text\f1\par
+}
+</DAT>
+<DAT name="U_DESC" xml:space='preserve'>Order Date</DAT>
 <DAT name="FRM_WIDGETTYPE">EDITBOX</DAT>
 <DAT name="DSP_WIDGETTYPE">EDITBOX</DAT>
 <DAT name="USP_WIDGETTYPE">U_INPUT</DAT>
@@ -454,7 +458,11 @@ return(0)
 <DAT name="IS_CONTROL">F</DAT>
 <DAT name="U_INT">N16</DAT>
 <DAT name="DATA_SYNTAX">MAN</DAT>
-<DAT name="U_DESC">$text(ordOrdnum)</DAT>
+<DAT name="UCOMMENT" xml:space='preserve'>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Verdana;}{\f1\fnil Verdana;}}
+\viewkind4\uc1\pard\f0\fs16 Use $text(ordOrdnum) for language-independent label text\f1\par
+}
+</DAT>
+<DAT name="U_DESC" xml:space='preserve'>Order Number</DAT>
 <DAT name="FRM_WIDGETTYPE">EDITBOX</DAT>
 <DAT name="DSP_WIDGETTYPE">EDITBOX</DAT>
 <DAT name="USP_WIDGETTYPE">U_INPUT</DAT>
@@ -472,9 +480,13 @@ return(0)
 <DAT name="IS_EXTERNAL">T</DAT>
 <DAT name="IS_STATIC">F</DAT>
 <DAT name="IS_CONTROL">F</DAT>
-<DAT name="U_INT">C60</DAT>
+<DAT name="U_INT">VW60</DAT>
 <DAT name="DATA_SYNTAX">MUL</DAT>
-<DAT name="U_DESC">$text(ordShipToName)</DAT>
+<DAT name="UCOMMENT" xml:space='preserve'>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Verdana;}{\f1\fnil Verdana;}}
+\viewkind4\uc1\pard\f0\fs16 Use \f1 $text(ordShipToName)\f0  for language-independent label text\f1\par
+}
+</DAT>
+<DAT name="U_DESC" xml:space='preserve'>Ship To Name</DAT>
 <DAT name="FRM_WIDGETTYPE">EDITBOX</DAT>
 <DAT name="DSP_WIDGETTYPE">EDITBOX</DAT>
 <DAT name="USP_WIDGETTYPE">U_INPUT</DAT>
@@ -493,7 +505,11 @@ return(0)
 <DAT name="IS_STATIC">F</DAT>
 <DAT name="IS_CONTROL">F</DAT>
 <DAT name="U_INT">D</DAT>
-<DAT name="U_DESC">$text(ordShpdate)</DAT>
+<DAT name="UCOMMENT" xml:space='preserve'>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Verdana;}{\f1\fnil Verdana;}}
+\viewkind4\uc1\pard\f0\fs16 Use $text(ordShpdate) for language-indepenent label text.\f1\par
+}
+</DAT>
+<DAT name="U_DESC" xml:space='preserve'>Shipping Date</DAT>
 <DAT name="FRM_WIDGETTYPE">EDITBOX</DAT>
 <DAT name="DSP_WIDGETTYPE">EDITBOX</DAT>
 <DAT name="USP_WIDGETTYPE">U_INPUT</DAT>
@@ -512,7 +528,11 @@ return(0)
 <DAT name="IS_STATIC">F</DAT>
 <DAT name="IS_CONTROL">F</DAT>
 <DAT name="U_INT">N3</DAT>
-<DAT name="U_DESC">$text(ordStatus)</DAT>
+<DAT name="UCOMMENT" xml:space='preserve'>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Verdana;}{\f1\fnil Verdana;}}
+\viewkind4\uc1\pard\f0\fs16 Use $text(ordStatus) for language-independent label text\f1\par
+}
+</DAT>
+<DAT name="U_DESC" xml:space='preserve'>Order Status</DAT>
 <DAT name="VALLAB" xml:space='preserve'>1=Provisional&uSEP;2=Confirmed&uSEP;3=Awaiting Stock&uSEP;4=Delivered</DAT>
 <DAT name="FRM_WIDGETTYPE">DROPDOWNLIST</DAT>
 <DAT name="DSP_WIDGETTYPE">EDITBOX</DAT>
@@ -532,8 +552,13 @@ return(0)
 <DAT name="IS_STATIC">F</DAT>
 <DAT name="IS_CONTROL">F</DAT>
 <DAT name="U_INT">M1.2</DAT>
-<DAT name="UCOMMENT" xml:space='preserve'>Could be derived but is stored to remove the need for price history</DAT>
-<DAT name="U_DESC">$text(ordTotal)</DAT>
+<DAT name="UCOMMENT" xml:space='preserve'>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil Verdana;}{\f1\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\f0\fs16 Could be derived but is stored to remove the need for price history\f1 .\par
+\par
+Use $text(ordTotal) for language-independent label text\f0\par
+}
+</DAT>
+<DAT name="U_DESC" xml:space='preserve'>Order Total</DAT>
 <DAT name="FRM_WIDGETTYPE">EDITBOX</DAT>
 <DAT name="DSP_WIDGETTYPE">EDITBOX</DAT>
 <DAT name="USP_WIDGETTYPE">U_INPUT</DAT>
@@ -541,8 +566,8 @@ return(0)
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UCKEY" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UCKEY" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="U_VLAB" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,4" idxsnr="101,1" />
 <FLD name="U_TLAB" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
@@ -592,8 +617,8 @@ return(0)
 </OCC>
 </TABLE>
 <TABLE>
-<DSC name="UCRELSH" model="DICT" system="S" pseudo ="73" level="1" noupdate="0"
- rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
+<DSC name="UCRELSH" model="DICT" system="S" pseudo ="73" level="1" noupdate="78"
+ rbk="75" ffsql="0" transnr="0" segsize="0" ufocc="0" charset=".U">
 <FLD name="U_GLAB" seqno="1" type="S" level="2" pack="0" scale="0" length="60"
  pointer="0" inum="2" ufocc="0" mandatory="yes" idxnum="1,2" idxsnr="101,1" />
 <FLD name="U_VLAB" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
