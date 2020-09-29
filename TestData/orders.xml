@@ -23,8 +23,6 @@
  pointer="0" inum="0" ufocc="0" />
 <FLD name="SHIPTONAME" seqno="9" type="S" level="2" pack="14" scale="0" length="60"
  pointer="0" inum="0" ufocc="0" />
-<FLD name="TOTAL" seqno="10" type="N" level="2" pack="14" scale="0" length="8"
- pointer="0" inum="0" ufocc="0" />
 </DSC>
 <OCC>
 <DAT name="IDORDER">03B14AB65D90CC795925B2E2337F764B831</DAT>
@@ -36,7 +34,6 @@
 <DAT name="ORDDATE">2011-06-06</DAT>
 <DAT name="SHIPDATE">2011-06-16</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">674.87</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0716828F4B0F6E0C80086EE716E5BBDA513</DAT>
@@ -48,7 +45,6 @@
 <DAT name="ORDDATE">2011-12-23</DAT>
 <DAT name="SHIPDATE">2012-01-02</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1071.94</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05233</DAT>
@@ -60,7 +56,6 @@
 <DAT name="ORDDATE">2011-08-27</DAT>
 <DAT name="SHIPDATE">2011-09-06</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">472.72</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05234</DAT>
@@ -72,7 +67,6 @@
 <DAT name="ORDDATE">2011-07-30</DAT>
 <DAT name="SHIPDATE">2011-08-09</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1048.91</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05235</DAT>
@@ -84,7 +78,6 @@
 <DAT name="ORDDATE">2012-01-03</DAT>
 <DAT name="SHIPDATE">2012-01-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">846.26</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05236</DAT>
@@ -96,7 +89,6 @@
 <DAT name="ORDDATE">2012-01-11</DAT>
 <DAT name="SHIPDATE">2012-01-21</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">432.94</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05237</DAT>
@@ -108,7 +100,6 @@
 <DAT name="ORDDATE">2012-02-12</DAT>
 <DAT name="SHIPDATE">2012-02-22</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">352.99</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05238</DAT>
@@ -120,7 +111,6 @@
 <DAT name="ORDDATE">2012-03-03</DAT>
 <DAT name="SHIPDATE">2012-03-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">162.81</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05239</DAT>
@@ -132,7 +122,6 @@
 <DAT name="ORDDATE">2011-05-27</DAT>
 <DAT name="SHIPDATE">2011-06-06</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1716.14</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05240</DAT>
@@ -144,7 +133,6 @@
 <DAT name="ORDDATE">2011-05-30</DAT>
 <DAT name="SHIPDATE">2011-06-09</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1014.6</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05241</DAT>
@@ -156,7 +144,6 @@
 <DAT name="ORDDATE">2011-06-03</DAT>
 <DAT name="SHIPDATE">2011-06-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">806.46</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05242</DAT>
@@ -168,7 +155,6 @@
 <DAT name="ORDDATE">2011-06-03</DAT>
 <DAT name="SHIPDATE">2011-06-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">348.82</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05243</DAT>
@@ -180,7 +166,6 @@
 <DAT name="ORDDATE">2011-06-03</DAT>
 <DAT name="SHIPDATE">2011-06-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">124.87</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05244</DAT>
@@ -192,7 +177,6 @@
 <DAT name="ORDDATE">2011-05-19</DAT>
 <DAT name="SHIPDATE">2011-05-29</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">454.53</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05245</DAT>
@@ -204,7 +188,6 @@
 <DAT name="ORDDATE">2011-05-29</DAT>
 <DAT name="SHIPDATE">2011-06-08</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">793.25</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05246</DAT>
@@ -216,7 +199,6 @@
 <DAT name="ORDDATE">2011-09-07</DAT>
 <DAT name="SHIPDATE">2011-09-17</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1752.04</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05247</DAT>
@@ -228,7 +210,6 @@
 <DAT name="ORDDATE">2011-11-07</DAT>
 <DAT name="SHIPDATE">2011-11-17</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">335.34</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05248</DAT>
@@ -240,7 +221,6 @@
 <DAT name="ORDDATE">2012-03-31</DAT>
 <DAT name="SHIPDATE">2012-04-10</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">223.83</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05249</DAT>
@@ -252,7 +232,6 @@
 <DAT name="ORDDATE">2011-05-28</DAT>
 <DAT name="SHIPDATE">2011-06-07</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">539.47</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05250</DAT>
@@ -264,7 +243,6 @@
 <DAT name="ORDDATE">2011-07-31</DAT>
 <DAT name="SHIPDATE">2011-08-10</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">514.53</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05251</DAT>
@@ -276,7 +254,6 @@
 <DAT name="ORDDATE">2011-11-04</DAT>
 <DAT name="SHIPDATE">2011-11-14</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">227.32</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05252</DAT>
@@ -288,7 +265,6 @@
 <DAT name="ORDDATE">2011-11-28</DAT>
 <DAT name="SHIPDATE">2011-12-08</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">442.92</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05253</DAT>
@@ -300,7 +276,6 @@
 <DAT name="ORDDATE">2011-12-20</DAT>
 <DAT name="SHIPDATE">2011-12-30</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">466.44</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05254</DAT>
@@ -312,7 +287,6 @@
 <DAT name="ORDDATE">2011-05-30</DAT>
 <DAT name="SHIPDATE">2011-06-09</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">644.63</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05255</DAT>
@@ -324,7 +298,6 @@
 <DAT name="ORDDATE">2011-08-30</DAT>
 <DAT name="SHIPDATE">2011-09-09</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">802.56</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05256</DAT>
@@ -336,7 +309,6 @@
 <DAT name="ORDDATE">2011-09-03</DAT>
 <DAT name="SHIPDATE">2011-09-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">543.14</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05257</DAT>
@@ -348,7 +320,6 @@
 <DAT name="ORDDATE">2011-09-30</DAT>
 <DAT name="SHIPDATE">2011-10-10</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">439.52</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05258</DAT>
@@ -360,7 +331,6 @@
 <DAT name="ORDDATE">2011-11-01</DAT>
 <DAT name="SHIPDATE">2011-11-11</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1240.48</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05259</DAT>
@@ -372,7 +342,6 @@
 <DAT name="ORDDATE">2011-11-01</DAT>
 <DAT name="SHIPDATE">2011-11-11</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">481.86</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05260</DAT>
@@ -384,7 +353,6 @@
 <DAT name="ORDDATE">2011-12-03</DAT>
 <DAT name="SHIPDATE">2011-12-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">552.59</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05261</DAT>
@@ -396,7 +364,6 @@
 <DAT name="ORDDATE">2012-01-02</DAT>
 <DAT name="SHIPDATE">2012-01-12</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1102.75</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05262</DAT>
@@ -408,7 +375,6 @@
 <DAT name="ORDDATE">2012-01-03</DAT>
 <DAT name="SHIPDATE">2012-01-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">496.45</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05263</DAT>
@@ -420,7 +386,6 @@
 <DAT name="ORDDATE">2012-03-24</DAT>
 <DAT name="SHIPDATE">2012-04-03</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">251.78</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05264</DAT>
@@ -432,7 +397,6 @@
 <DAT name="ORDDATE">2012-03-29</DAT>
 <DAT name="SHIPDATE">2012-04-08</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">500.97</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05265</DAT>
@@ -444,7 +408,6 @@
 <DAT name="ORDDATE">2012-04-03</DAT>
 <DAT name="SHIPDATE">2012-04-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">381.74</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05266</DAT>
@@ -456,7 +419,6 @@
 <DAT name="ORDDATE">2012-04-04</DAT>
 <DAT name="SHIPDATE">2012-04-14</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">695.26</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05267</DAT>
@@ -468,7 +430,6 @@
 <DAT name="ORDDATE">2012-04-21</DAT>
 <DAT name="SHIPDATE">2012-05-01</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">301.46</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05268</DAT>
@@ -480,7 +441,6 @@
 <DAT name="ORDDATE">2011-05-03</DAT>
 <DAT name="SHIPDATE">2011-05-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1130.3</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05269</DAT>
@@ -492,7 +452,6 @@
 <DAT name="ORDDATE">2011-05-03</DAT>
 <DAT name="SHIPDATE">2011-05-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">240.75</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05270</DAT>
@@ -504,7 +463,6 @@
 <DAT name="ORDDATE">2011-06-03</DAT>
 <DAT name="SHIPDATE">2011-06-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">217.46</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05271</DAT>
@@ -516,7 +474,6 @@
 <DAT name="ORDDATE">2011-06-21</DAT>
 <DAT name="SHIPDATE">2011-07-01</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1140.92</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05272</DAT>
@@ -528,7 +485,6 @@
 <DAT name="ORDDATE">2011-07-30</DAT>
 <DAT name="SHIPDATE">2011-08-09</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">477.75</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05273</DAT>
@@ -540,7 +496,6 @@
 <DAT name="ORDDATE">2011-09-24</DAT>
 <DAT name="SHIPDATE">2011-10-04</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">923.71</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05274</DAT>
@@ -552,7 +507,6 @@
 <DAT name="ORDDATE">2011-10-29</DAT>
 <DAT name="SHIPDATE">2011-11-08</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">685.06</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05275</DAT>
@@ -564,7 +518,6 @@
 <DAT name="ORDDATE">2011-11-01</DAT>
 <DAT name="SHIPDATE">2011-11-11</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">565.95</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05276</DAT>
@@ -576,7 +529,6 @@
 <DAT name="ORDDATE">2011-11-01</DAT>
 <DAT name="SHIPDATE">2011-11-11</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1003</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05277</DAT>
@@ -588,7 +540,6 @@
 <DAT name="ORDDATE">2012-01-26</DAT>
 <DAT name="SHIPDATE">2012-02-05</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">588.76</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05278</DAT>
@@ -600,7 +551,6 @@
 <DAT name="ORDDATE">2012-02-04</DAT>
 <DAT name="SHIPDATE">2012-02-08</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">289.36</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05279</DAT>
@@ -612,7 +562,6 @@
 <DAT name="ORDDATE">2011-05-04</DAT>
 <DAT name="SHIPDATE">2011-05-14</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">445.85</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">0788CB3E86C584D4D1FE2C2D3F16B05280</DAT>
@@ -624,7 +573,6 @@
 <DAT name="ORDDATE">2011-05-03</DAT>
 <DAT name="SHIPDATE">2011-05-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">518.72</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">19978B22D037B841AD516764D47B0B2B057</DAT>
@@ -636,7 +584,6 @@
 <DAT name="ORDDATE">2011-09-25</DAT>
 <DAT name="SHIPDATE">2011-10-05</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">592.87</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">4187DA7DE6C3263D470AF1337BC6D97CE52</DAT>
@@ -648,7 +595,6 @@
 <DAT name="ORDDATE">2012-02-02</DAT>
 <DAT name="SHIPDATE">2012-02-12</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">461.99</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">4EEDF593081E7ED684273BB4582D55B595B</DAT>
@@ -660,7 +606,6 @@
 <DAT name="ORDDATE">2012-03-03</DAT>
 <DAT name="SHIPDATE">2012-03-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">864.92</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8233</DAT>
@@ -672,7 +617,6 @@
 <DAT name="ORDDATE">2012-02-28</DAT>
 <DAT name="SHIPDATE">2012-03-10</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">746.49</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8247</DAT>
@@ -684,7 +628,6 @@
 <DAT name="ORDDATE">2011-05-11</DAT>
 <DAT name="SHIPDATE">2011-05-21</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">343.74</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8248</DAT>
@@ -696,7 +639,6 @@
 <DAT name="ORDDATE">2011-10-03</DAT>
 <DAT name="SHIPDATE">2011-10-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1500.89</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8249</DAT>
@@ -708,7 +650,6 @@
 <DAT name="ORDDATE">2011-11-30</DAT>
 <DAT name="SHIPDATE">2011-12-10</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">698.55</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8251</DAT>
@@ -720,7 +661,6 @@
 <DAT name="ORDDATE">2011-05-08</DAT>
 <DAT name="SHIPDATE">2011-05-18</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">749.23</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8252</DAT>
@@ -732,7 +672,6 @@
 <DAT name="ORDDATE">2011-06-01</DAT>
 <DAT name="SHIPDATE">2011-06-11</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">627.11</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8254</DAT>
@@ -744,7 +683,6 @@
 <DAT name="ORDDATE">2011-12-01</DAT>
 <DAT name="SHIPDATE">2011-12-11</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">427.87</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8256</DAT>
@@ -756,7 +694,6 @@
 <DAT name="ORDDATE">2012-03-07</DAT>
 <DAT name="SHIPDATE">2012-03-17</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">399</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8257</DAT>
@@ -768,7 +705,6 @@
 <DAT name="ORDDATE">2012-04-03</DAT>
 <DAT name="SHIPDATE">2012-04-13</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">503.38</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8258</DAT>
@@ -780,7 +716,6 @@
 <DAT name="ORDDATE">2011-05-05</DAT>
 <DAT name="SHIPDATE">2011-05-15</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">653.46</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8259</DAT>
@@ -792,7 +727,6 @@
 <DAT name="ORDDATE">2011-05-05</DAT>
 <DAT name="SHIPDATE">2011-05-15</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">608.65</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8261</DAT>
@@ -804,7 +738,6 @@
 <DAT name="ORDDATE">2011-07-06</DAT>
 <DAT name="SHIPDATE">2011-07-16</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">323.42</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8264</DAT>
@@ -816,7 +749,6 @@
 <DAT name="ORDDATE">2011-09-30</DAT>
 <DAT name="SHIPDATE">2011-10-10</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">677.89</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8265</DAT>
@@ -828,7 +760,6 @@
 <DAT name="ORDDATE">2011-10-05</DAT>
 <DAT name="SHIPDATE">2011-10-15</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">440.66</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8266</DAT>
@@ -840,7 +771,6 @@
 <DAT name="ORDDATE">2011-10-06</DAT>
 <DAT name="SHIPDATE">2011-10-16</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">558.07</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8267</DAT>
@@ -852,7 +782,6 @@
 <DAT name="ORDDATE">2011-10-23</DAT>
 <DAT name="SHIPDATE">2011-11-02</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">209.64</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8269</DAT>
@@ -864,7 +793,6 @@
 <DAT name="ORDDATE">2011-11-04</DAT>
 <DAT name="SHIPDATE">2011-11-14</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">733.69</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8270</DAT>
@@ -876,7 +804,6 @@
 <DAT name="ORDDATE">2011-12-05</DAT>
 <DAT name="SHIPDATE">2011-12-15</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">437.38</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8272</DAT>
@@ -888,7 +815,6 @@
 <DAT name="ORDDATE">2012-01-31</DAT>
 <DAT name="SHIPDATE">2012-02-10</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">420.25</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8273</DAT>
@@ -900,7 +826,6 @@
 <DAT name="ORDDATE">2012-03-28</DAT>
 <DAT name="SHIPDATE">2012-04-07</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">186.95</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8274</DAT>
@@ -912,7 +837,6 @@
 <DAT name="ORDDATE">2011-05-02</DAT>
 <DAT name="SHIPDATE">2011-05-12</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">516.08</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8276</DAT>
@@ -924,7 +848,6 @@
 <DAT name="ORDDATE">2011-05-05</DAT>
 <DAT name="SHIPDATE">2011-05-15</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">489.28</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8278</DAT>
@@ -936,7 +859,6 @@
 <DAT name="ORDDATE">2011-08-08</DAT>
 <DAT name="SHIPDATE">2011-08-18</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">850.97</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8279</DAT>
@@ -948,7 +870,6 @@
 <DAT name="ORDDATE">2011-12-25</DAT>
 <DAT name="SHIPDATE">2012-01-04</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">884.47</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">7A6A752FF8B09F3CCA0EB829A8DBB8280</DAT>
@@ -960,7 +881,6 @@
 <DAT name="ORDDATE">2012-01-05</DAT>
 <DAT name="SHIPDATE">2012-01-15</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">297.25</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">85C1FEF5236C9BF171ADB6834C48883567F3</DAT>
@@ -972,7 +892,6 @@
 <DAT name="ORDDATE">2012-01-03</DAT>
 <DAT name="SHIPDATE">2012-02-01</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>Mtoni Court School</DAT>
-<DAT name="TOTAL">690.6</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">98EE215AB7C464D9DD4D73377208F5ED629</DAT>
@@ -984,7 +903,6 @@
 <DAT name="ORDDATE">2011-06-23</DAT>
 <DAT name="SHIPDATE">2011-07-03</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1305.66</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">A957AE7C7C5F9649BBC00D2775768F39D5E</DAT>
@@ -996,7 +914,6 @@
 <DAT name="ORDDATE">2011-07-07</DAT>
 <DAT name="SHIPDATE">2011-07-17</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">536.27</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">C81CB8D488BB6D7B5EEF7C74BE261005F2A</DAT>
@@ -1008,7 +925,6 @@
 <DAT name="ORDDATE">2011-11-04</DAT>
 <DAT name="SHIPDATE">2011-11-14</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1084.8</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">CC2F1DC85A49EA5D866211CFFD10C367DA4</DAT>
@@ -1020,7 +936,6 @@
 <DAT name="ORDDATE">2011-06-06</DAT>
 <DAT name="SHIPDATE">2011-06-10</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>Violet Giles</DAT>
-<DAT name="TOTAL">423.73</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">O23JK</DAT>
@@ -1032,7 +947,6 @@
 <DAT name="ORDDATE">2012-03-11</DAT>
 <DAT name="SHIPDATE">2012-03-21</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">541.36</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">O43LJKLKJ</DAT>
@@ -1044,7 +958,6 @@
 <DAT name="ORDDATE">2011-11-21</DAT>
 <DAT name="SHIPDATE">2011-12-01</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1912.99</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o23324wer</DAT>
@@ -1056,7 +969,6 @@
 <DAT name="ORDDATE">2011-09-04</DAT>
 <DAT name="SHIPDATE">2011-09-14</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">880.95</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o234jklj88</DAT>
@@ -1068,7 +980,6 @@
 <DAT name="ORDDATE">2012-02-01</DAT>
 <DAT name="SHIPDATE">2012-02-11</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">4414.11</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o234jkljkl</DAT>
@@ -1080,7 +991,6 @@
 <DAT name="ORDDATE">2011-12-19</DAT>
 <DAT name="SHIPDATE">2011-12-20</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">601.5</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o23jjkj898</DAT>
@@ -1092,7 +1002,6 @@
 <DAT name="ORDDATE">2011-12-01</DAT>
 <DAT name="SHIPDATE">2011-12-11</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">506.7</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o324324324342</DAT>
@@ -1104,7 +1013,6 @@
 <DAT name="ORDDATE">2011-08-16</DAT>
 <DAT name="SHIPDATE">2011-08-26</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">2181.95</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o328777sdkj</DAT>
@@ -1116,7 +1024,6 @@
 <DAT name="ORDDATE">2011-11-28</DAT>
 <DAT name="SHIPDATE">2011-12-08</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">973.82</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o3428342i</DAT>
@@ -1128,7 +1035,6 @@
 <DAT name="ORDDATE">2011-05-05</DAT>
 <DAT name="SHIPDATE">2011-05-15</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1105.28</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o34ii32</DAT>
@@ -1140,7 +1046,6 @@
 <DAT name="ORDDATE">2011-10-17</DAT>
 <DAT name="SHIPDATE">2011-10-23</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">778.1</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o78sdjjw</DAT>
@@ -1152,7 +1057,6 @@
 <DAT name="ORDDATE">2011-09-18</DAT>
 <DAT name="SHIPDATE">2011-09-19</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">686.71</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o832jjj</DAT>
@@ -1164,7 +1068,6 @@
 <DAT name="ORDDATE">2011-07-30</DAT>
 <DAT name="SHIPDATE">2011-08-09</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1068.5</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o883lkkj</DAT>
@@ -1176,7 +1079,6 @@
 <DAT name="ORDDATE">2011-12-05</DAT>
 <DAT name="SHIPDATE">2011-12-15</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">895.53</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o892kk28</DAT>
@@ -1188,7 +1090,6 @@
 <DAT name="ORDDATE">2011-12-01</DAT>
 <DAT name="SHIPDATE">2011-12-11</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">958.36</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o8932jj</DAT>
@@ -1200,7 +1101,6 @@
 <DAT name="ORDDATE">2012-01-28</DAT>
 <DAT name="SHIPDATE">2012-01-29</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">293.94</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o8ikm423</DAT>
@@ -1212,7 +1112,6 @@
 <DAT name="ORDDATE">2011-06-18</DAT>
 <DAT name="SHIPDATE">2011-06-19</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1009.88</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o983478</DAT>
@@ -1224,7 +1123,6 @@
 <DAT name="ORDDATE">2011-07-15</DAT>
 <DAT name="SHIPDATE">2011-07-25</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1110.02</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o9899wsdf</DAT>
@@ -1236,7 +1134,6 @@
 <DAT name="ORDDATE">2011-12-05</DAT>
 <DAT name="SHIPDATE">2011-12-15</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">1064.71</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o99342k</DAT>
@@ -1248,7 +1145,6 @@
 <DAT name="ORDDATE">2011-11-18</DAT>
 <DAT name="SHIPDATE">2011-11-19</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">650.22</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">o9kmkjk23488</DAT>
@@ -1260,7 +1156,6 @@
 <DAT name="ORDDATE">2011-07-07</DAT>
 <DAT name="SHIPDATE">2011-07-17</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">712.65</DAT>
 </OCC>
 <OCC>
 <DAT name="IDORDER">okj3jj222</DAT>
@@ -1272,7 +1167,6 @@
 <DAT name="ORDDATE">2011-12-05</DAT>
 <DAT name="SHIPDATE">2011-12-15</DAT>
 <DAT name="SHIPTONAME" xml:space='preserve'>As Customer</DAT>
-<DAT name="TOTAL">682.33</DAT>
 </OCC>
 </TABLE>
 </UNIFACE>
