@@ -17,7 +17,7 @@
  pointer="0" inum="1" ufocc="0" idxnum="3" idxsnr="1" />
 </DSC>
 <OCC>
-<DAT name="UTIMESTAMP">2020-09-28T15:27:45.00</DAT>
+<DAT name="UTIMESTAMP">2020-09-29T18:50:35.00</DAT>
 <DAT name="U_VLAB">ACMEORD</DAT>
 <DAT name="U_TLAB">ORDERS</DAT>
 <DAT name="UKVERSION">4</DAT>
@@ -347,7 +347,7 @@ return(0)
 <DAT name="U_FSEQ">3</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">4</DAT>
-<DAT name="UDESCR" xml:space='preserve'>DeliveryAddressFK *Do Not Paint*</DAT>
+<DAT name="UDESCR" xml:space='preserve'>DeliveryAddress FK *Do Not Paint*</DAT>
 <DAT name="U_DTYP">S</DAT>
 <DAT name="IS_EXTERNAL">T</DAT>
 <DAT name="IS_STATIC">F</DAT>
@@ -387,7 +387,7 @@ return(0)
 <DAT name="U_FSEQ">4</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">4</DAT>
-<DAT name="UDESCR" xml:space='preserve'>DeliveryMethodFK *Do Not Paint*</DAT>
+<DAT name="UDESCR" xml:space='preserve'>DeliveryMethod FK *Do Not Paint*</DAT>
 <DAT name="U_DTYP">S</DAT>
 <DAT name="IS_EXTERNAL">T</DAT>
 <DAT name="IS_STATIC">F</DAT>
@@ -448,7 +448,7 @@ return(0)
 <DAT name="U_FLAB">ORDNUM</DAT>
 <DAT name="U_VLAB">ACMEORD</DAT>
 <DAT name="U_TLAB">ORDERS</DAT>
-<DAT name="U_FSEQ">5</DAT>
+<DAT name="U_FSEQ">6</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">4</DAT>
 <DAT name="UDESCR" xml:space='preserve'>Order Number</DAT>
@@ -469,31 +469,7 @@ return(0)
 <DAT name="USP_WIDGETPROPS">SYNC=1</DAT>
 </OCC>
 <OCC>
-<DAT name="U_FLAB">SHIPTONAME</DAT>
-<DAT name="U_VLAB">ACMEORD</DAT>
-<DAT name="U_TLAB">ORDERS</DAT>
-<DAT name="U_FSEQ">10</DAT>
-<DAT name="UKVERSION">6</DAT>
-<DAT name="UMVERSION">4</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Ship to Name</DAT>
-<DAT name="U_DTYP">S</DAT>
-<DAT name="IS_EXTERNAL">T</DAT>
-<DAT name="IS_STATIC">F</DAT>
-<DAT name="IS_CONTROL">F</DAT>
-<DAT name="U_INT">VW60</DAT>
-<DAT name="DATA_SYNTAX">MUL</DAT>
-<DAT name="UCOMMENT" xml:space='preserve'>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Verdana;}{\f1\fnil Verdana;}}
-\viewkind4\uc1\pard\f0\fs16 Use \f1 $text(ordShipToName)\f0  for language-independent label text\f1\par
-}
-</DAT>
-<DAT name="U_DESC" xml:space='preserve'>Ship To Name</DAT>
-<DAT name="FRM_WIDGETTYPE">EDITBOX</DAT>
-<DAT name="DSP_WIDGETTYPE">EDITBOX</DAT>
-<DAT name="USP_WIDGETTYPE">U_INPUT</DAT>
-<DAT name="USP_WIDGETPROPS">SYNC=1</DAT>
-</OCC>
-<OCC>
-<DAT name="U_FLAB">SHPDATE</DAT>
+<DAT name="U_FLAB">SHIPDATE</DAT>
 <DAT name="U_VLAB">ACMEORD</DAT>
 <DAT name="U_TLAB">ORDERS</DAT>
 <DAT name="U_FSEQ">8</DAT>
@@ -516,24 +492,48 @@ return(0)
 <DAT name="USP_WIDGETPROPS">SYNC=1</DAT>
 </OCC>
 <OCC>
-<DAT name="U_FLAB">STATUS</DAT>
+<DAT name="U_FLAB">SHIPTONAME</DAT>
 <DAT name="U_VLAB">ACMEORD</DAT>
 <DAT name="U_TLAB">ORDERS</DAT>
-<DAT name="U_FSEQ">6</DAT>
+<DAT name="U_FSEQ">9</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">4</DAT>
-<DAT name="UDESCR" xml:space='preserve'>Order Status</DAT>
-<DAT name="U_DTYP">N</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Ship to Name</DAT>
+<DAT name="U_DTYP">S</DAT>
 <DAT name="IS_EXTERNAL">T</DAT>
 <DAT name="IS_STATIC">F</DAT>
 <DAT name="IS_CONTROL">F</DAT>
-<DAT name="U_INT">N3</DAT>
+<DAT name="U_INT">VW60</DAT>
+<DAT name="DATA_SYNTAX">MUL</DAT>
+<DAT name="UCOMMENT" xml:space='preserve'>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Verdana;}{\f1\fnil Verdana;}}
+\viewkind4\uc1\pard\f0\fs16 Use \f1 $text(ordShipToName)\f0  for language-independent label text\f1\par
+}
+</DAT>
+<DAT name="U_DESC" xml:space='preserve'>Ship To Name</DAT>
+<DAT name="FRM_WIDGETTYPE">EDITBOX</DAT>
+<DAT name="DSP_WIDGETTYPE">EDITBOX</DAT>
+<DAT name="USP_WIDGETTYPE">U_INPUT</DAT>
+<DAT name="USP_WIDGETPROPS">SYNC=1</DAT>
+</OCC>
+<OCC>
+<DAT name="U_FLAB">STATUS</DAT>
+<DAT name="U_VLAB">ACMEORD</DAT>
+<DAT name="U_TLAB">ORDERS</DAT>
+<DAT name="U_FSEQ">5</DAT>
+<DAT name="UKVERSION">6</DAT>
+<DAT name="UMVERSION">4</DAT>
+<DAT name="UDESCR" xml:space='preserve'>Order Status</DAT>
+<DAT name="U_DTYP">S</DAT>
+<DAT name="IS_EXTERNAL">T</DAT>
+<DAT name="IS_STATIC">F</DAT>
+<DAT name="IS_CONTROL">F</DAT>
+<DAT name="U_INT">C1</DAT>
 <DAT name="UCOMMENT" xml:space='preserve'>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Verdana;}{\f1\fnil Verdana;}}
 \viewkind4\uc1\pard\f0\fs16 Use $text(ordStatus) for language-independent label text\f1\par
 }
 </DAT>
 <DAT name="U_DESC" xml:space='preserve'>Order Status</DAT>
-<DAT name="VALLAB" xml:space='preserve'>1=Provisional&uSEP;2=Confirmed&uSEP;3=Awaiting Stock&uSEP;4=Delivered</DAT>
+<DAT name="VALLAB" xml:space='preserve'>P=Pending authorization&uSEP;C=Confirmed&uSEP;A=Awaiting Stock&uSEP;D=Dispatched</DAT>
 <DAT name="FRM_WIDGETTYPE">DROPDOWNLIST</DAT>
 <DAT name="DSP_WIDGETTYPE">EDITBOX</DAT>
 <DAT name="USP_WIDGETTYPE">U_INPUT</DAT>
@@ -543,7 +543,7 @@ return(0)
 <DAT name="U_FLAB">TOTAL</DAT>
 <DAT name="U_VLAB">ACMEORD</DAT>
 <DAT name="U_TLAB">ORDERS</DAT>
-<DAT name="U_FSEQ">9</DAT>
+<DAT name="U_FSEQ">10</DAT>
 <DAT name="UKVERSION">6</DAT>
 <DAT name="UMVERSION">4</DAT>
 <DAT name="UDESCR" xml:space='preserve'>Order Total</DAT>
