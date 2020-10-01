@@ -5,21 +5,21 @@
 <TABLE>
 <DSC name="ADDRESS" model="ACMECUST" system="S" pseudo ="90" level="1" noupdate="0"
  rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0">
-<FLD name="IDADDRESS" seqno="1" type="S" level="2" pack="0" scale="0" length="40"
+<FLD name="IDADDRESS" seqno="1" type="S" level="2" pack="0" scale="0" length="36"
  pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
 <FLD name="COUNTRYID" seqno="2" type="S" level="2" pack="0" scale="0" length="3"
  pointer="0" inum="0" ufocc="0" />
-<FLD name="HOUSE" seqno="3" type="S" level="2" pack="0" scale="0" length="40"
+<FLD name="HOUSE" seqno="3" type="S" level="2" pack="14" scale="0" length="40"
  pointer="0" inum="0" ufocc="0" />
-<FLD name="STREETNAME" seqno="4" type="S" level="2" pack="0" scale="0" length="40"
+<FLD name="STREETNAME" seqno="4" type="S" level="2" pack="14" scale="0" length="40"
  pointer="0" inum="0" ufocc="0" />
-<FLD name="TOWN" seqno="5" type="S" level="2" pack="0" scale="0" length="40"
+<FLD name="TOWN" seqno="5" type="S" level="2" pack="14" scale="0" length="40"
  pointer="0" inum="0" ufocc="0" />
-<FLD name="COUNTY" seqno="6" type="S" level="2" pack="0" scale="0" length="40"
+<FLD name="COUNTY" seqno="6" type="S" level="2" pack="14" scale="0" length="40"
  pointer="0" inum="0" ufocc="0" />
-<FLD name="POSTCODE" seqno="7" type="S" level="2" pack="0" scale="0" length="10"
+<FLD name="POSTCODE" seqno="7" type="S" level="2" pack="14" scale="0" length="10"
  pointer="0" inum="0" ufocc="0" />
-<FLD name="TELNO" seqno="8" type="S" level="2" pack="0" scale="0" length="20"
+<FLD name="TELNO" seqno="8" type="S" level="2" pack="14" scale="0" length="20"
  pointer="0" inum="0" ufocc="0" />
 </DSC>
 <OCC>

@@ -7,9 +7,9 @@
  rbk="0" ffsql="0" transnr="0" segsize="0" ufocc="0">
 <FLD name="IDCOUNTRY" seqno="1" type="S" level="2" pack="0" scale="0" length="3"
  pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="1" idxsnr="101" />
-<FLD name="NM" seqno="2" type="S" level="2" pack="0" scale="0" length="60"
+<FLD name="NM" seqno="2" type="S" level="2" pack="14" scale="0" length="60"
  pointer="0" inum="1" ufocc="0" mandatory="yes" idxnum="2" idxsnr="101" />
-<FLD name="TELCODE" seqno="3" type="S" level="2" pack="0" scale="0" length="10"
+<FLD name="TELCODE" seqno="3" type="S" level="2" pack="14" scale="0" length="10"
  pointer="0" inum="0" ufocc="0" />
 </DSC>
 <OCC>
