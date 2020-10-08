@@ -17,3 +17,4 @@ web/WEB-INF/web.xml
 */backup/
 *.zip
 project.setup.xml
+.WASListener.lock
